@@ -14,7 +14,7 @@ def load_tasks(game_type, n_tasks):
         unused_tasks = list(available_tasks.keys())
         with open(f'tasks/{game_type}.json', 'w') as f:
             json.dump(unused_tasks, f)
-    return [(i, available_tasks[i]) for i in random.choices(unused_tasks, k=n_tasks)]
+    return [(i, available_tasks[i]) for i in random.sample(unused_tasks, k=n_tasks)]
 
 
 def mark_task_used(game_type, task_id):
