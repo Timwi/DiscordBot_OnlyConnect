@@ -1,6 +1,6 @@
 import tasks
 
-task_amounts = {'connection': 6, 'sequence': 6, 'consonants': 4}
+task_amounts = {'connection': 6, 'sequence': 6, 'grid': 2, 'grid_finals': 2, 'missing_vowels': 4}
 
 
 class Game:
