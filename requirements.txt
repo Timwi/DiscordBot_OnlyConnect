@@ -1,2 +1,2 @@
-discord
-discord_ui
+# discord: pip install -U git+https://github.com/Rapptz/discord.py#egg=discord.py
+Pillow
