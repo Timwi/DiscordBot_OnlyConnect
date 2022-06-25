@@ -5,14 +5,14 @@ import random
 
 
 def load_tasks(game_type, n_tasks, one_image=False):
-    with open(f'tasks/{game_type}.csv') as f:
+    with open(f'tasks/{game_type}.csv', encoding='utf-8') as f:
         available_tasks = dict(enumerate(csv.reader(f)))
     if os.path.exists(f'tasks/{game_type}.json'):
-        with open(f'tasks/{game_type}.json') as f:
+        with open(f'tasks/{game_type}.json', encoding='utf-8') as f:
             unused_tasks = json.load(f)
     else:
         unused_tasks = list(available_tasks.keys())
-        with open(f'tasks/{game_type}.json', 'w') as f:
+        with open(f'tasks/{game_type}.json', 'w', encoding='utf-8') as f:
             json.dump(unused_tasks, f)
     image_task = None
     if one_image:
@@ -37,8 +37,8 @@ def load_tasks(game_type, n_tasks, one_image=False):
 
 
 def mark_task_used(game_type, task_id):
-    with open(f'tasks/{game_type}.json') as f:
+    with open(f'tasks/{game_type}.json', encoding='utf-8') as f:
         unused_tasks = json.load(f)
     unused_tasks.remove(task_id)
-    with open(f'tasks/{game_type}.json', 'w') as f:
+    with open(f'tasks/{game_type}.json', 'w', encoding='utf-8') as f:
         json.dump(unused_tasks, f)
