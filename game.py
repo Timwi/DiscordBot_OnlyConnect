@@ -10,7 +10,7 @@ class Game:
         self.team_2_name = None
         self.team_2_players = None
         self.channel = None
-        self.tasks = {game_type: tasks.load_tasks(game_type, n_tasks) for game_type, n_tasks in task_amounts.items()}
+        self.tasks = {game_type: tasks.load_tasks(game_type, n_tasks, one_image=(game_type in ('connection', 'sequence'))) for game_type, n_tasks in task_amounts.items()}
 
     def disabled_tasks(self, game_type):
         return [task_tuple is None for task_tuple in self.tasks[game_type]]
