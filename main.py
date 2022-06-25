@@ -130,7 +130,7 @@ def gen_thumbs(images, cols, out_file, s=(250, 250)):
     pad = 5
     title = 28
     rows = math.ceil(len(images) / cols)
-    res = Image.new('RGB', (cols * s[0] + 2 * pad, rows * s[1]), (54, 57, 63))
+    res = Image.new('RGB', (cols * s[0] + 2 * pad, rows * s[1]), (47, 49, 54))
     for i, image in enumerate(images):
         im = Image.open(os.path.join('tasks', 'images', image))
         im.thumbnail((s[0] - 2 * bw - 2 * pad, s[1] - 2 * bw - 2 * pad - title))
