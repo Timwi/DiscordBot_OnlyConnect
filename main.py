@@ -292,7 +292,7 @@ async def play_missing_vowels(players):
         buzzer_id = str(uuid.uuid4())
         parent_view.add_item(discord.ui.Button(emoji='🔔', custom_id=buzzer_id, style=discord.ButtonStyle.red))
         embed = discord.Embed(title=f'missing vowels', description=task[0], colour=0x5865f2)
-        msg = await game.channel.send(mentions, embed=embed, components=components)
+        msg = await game.channel.send(mentions, embed=embed, view=parent_view)
         buzz_msg = None
         for word_number in range(5):
             btn_click: discord.Interaction = await client.wait_for('interaction', check=lambda e: e.data.get('custom_id') == buzzer_id and e.user.id in config.admins, timeout=None)
