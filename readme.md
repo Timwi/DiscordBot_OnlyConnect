@@ -21,7 +21,7 @@ as en example/template.
 
 3. Edit tasks:
     Use LibreOffice Calc or MS Excel to edit the `tasks/*.csv` files. Each line contains one task.
-    The order of the tasks within a file will be randomised, the order of answers inside a tasks is fix.
+    The order of the tasks within a file will be randomised, the order of answers inside a task is fixed.
     The line numbers of still available tasks is stored in a JSON file analogous to the csv file.
     If the JSON file does not exist it is created with all line numbers by the `/init` command.
     This can be reset by deleting the JSON file.
@@ -85,10 +85,10 @@ Then an admin can click the buzzer again to reveal the connection.
 
 ### Sequence
 The tasks are defined in `tasks/sequence.csv`. The first three columns contain the three clues in order.
-The fourth column contains the seeked element (solution).
+The fourth column contains the sought element (solution).
 The fifth column contains the connection (explanation of the sequence).
 After the playing team buzzed or time (60s) runs out, an admin can click the buzzer to reveal unused clues.
-Then an admin can click the buzzer again to reveal the seeked element and the connection.
+Then an admin can click the buzzer again to reveal the sought element and the connection.
 
 ### Grid and Grid finals
 The tasks are defined in `tasks/grid.csv` and `tasks/grid_finals.csv`.
@@ -107,10 +107,10 @@ and the solution.
 After one team buzzes or the time (10s) runs out, an admin can click the buzzer to reveal the solution,
 wait 5 seconds and then show the next prompt.
 While the show uses a fixed amount of time for this category,
-the bot will always play four rounds of four prompts each. 
+the bot will always play four rounds of four prompts each.
 
 ## TODO
 Would be nice if the bot could keep track of scores by having admins click `correct` or `incorrect` buttons
 after a team buzzes or time runs out.
-The bot could also just run all rounds of a game automatically instead of an admin calling /game 15 times.
+The bot could also just run all rounds of a game automatically instead of an admin calling `/play` 15 times.
 I don't know if I will implement that in the future, maybe if we want to use the bot again.
