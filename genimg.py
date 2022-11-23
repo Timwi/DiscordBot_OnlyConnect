@@ -11,6 +11,9 @@ question_mark_button	= Image.open(os.path.join('res', 'qq.png'))
 answer_bar	= Image.open(os.path.join('res', 'answer.png'))
 timer_bar	= Image.open(os.path.join('res', 'timer.png'))
 wall_colors	= list(map(lambda n: Image.open(os.path.join('res', f'wall_{n}.png')), [1, 2, 3, 4]))
+score_bar_1	= Image.open(os.path.join('res', 'score_1.png'))
+score_bar_2	= Image.open(os.path.join('res', 'score_2.png'))
+score_box	= Image.open(os.path.join('res', 'score.png'))
 
 def is_font_too_large(fs, texts, maxw, maxh):
 	font = default_font if fs == default_font_size else ImageFont.truetype(default_font_path, fs)
@@ -23,11 +26,11 @@ def is_font_too_large(fs, texts, maxw, maxh):
 		l = max(l, font.getlength(text))
 	return (l > maxw, font, fh)
 
-def find_font_size(texts, maxw, maxh):
-	(too_large, font, fh) = is_font_too_large(default_font_size, texts, maxw, maxh)
+def find_font_size(texts, maxw, maxh, start_size=default_font_size):
+	(too_large, font, fh) = is_font_too_large(start_size, texts, maxw, maxh)
 	if too_large:
 		low = 1
-		hig = 48
+		hig = start_size
 		while hig > low + 1:
 			mid = (low + hig) // 2
 			(too_large2, font2, fh2) = is_font_too_large(mid, texts, maxw, maxh)
@@ -47,8 +50,7 @@ def find_font_size(texts, maxw, maxh):
 # • 4 = 3 clues + “?” shown, timer shows 2 points (round 2 only)
 # • 5 = 3 clues + “?” shown, timer shows 1 point (round 2 only)
 # • 6 = everything shown (incl. answer), no timer
-def gen_img(clues, answer_text, stage, filename=None):
-
+def gen_img(q, stage, filename=None):
 	pad = 12	# padding between buttons
 	w = 360	# width of a button
 	h = 200	# height of a button
@@ -106,39 +108,39 @@ def gen_img(clues, answer_text, stage, filename=None):
 					draw.text((x + w//2 - l//2, txy + fh*line + fo), text, font=font, fill=(5, 47, 85))
 
 	if stage == 0:
-		gen_button(0, clues[0], '5 points')
+		gen_button(0, q['clues'][0], '5 points')
 	elif stage == 1:
-		gen_button(0, clues[0], None)
-		gen_button(1, clues[1], '3 points')
+		gen_button(0, q['clues'][0], None)
+		gen_button(1, q['clues'][1], '3 points')
 	elif stage == 2:
-		gen_button(0, clues[0], None)
-		gen_button(1, clues[1], None)
-		gen_button(2, clues[2], '2 points')
+		gen_button(0, q['clues'][0], None)
+		gen_button(1, q['clues'][1], None)
+		gen_button(2, q['clues'][2], '2 points')
 	elif stage == 3:
-		gen_button(0, clues[0], None)
-		gen_button(1, clues[1], None)
-		gen_button(2, clues[2], None)
-		gen_button(3, clues[3], '1 point')
+		gen_button(0, q['clues'][0], None)
+		gen_button(1, q['clues'][1], None)
+		gen_button(2, q['clues'][2], None)
+		gen_button(3, q['clues'][3], '1 point')
 	elif stage == 4:
-		gen_button(0, clues[0], None)
-		gen_button(1, clues[1], None)
-		gen_button(2, clues[2], '2 points')
+		gen_button(0, q['clues'][0], None)
+		gen_button(1, q['clues'][1], None)
+		gen_button(2, q['clues'][2], '2 points')
 		gen_button(3, None, None)
 	elif stage == 5:
-		gen_button(0, clues[0], None)
-		gen_button(1, clues[1], None)
-		gen_button(2, clues[2], None)
+		gen_button(0, q['clues'][0], None)
+		gen_button(1, q['clues'][1], None)
+		gen_button(2, q['clues'][2], None)
 		gen_button(3, None, '1 point')
 	elif stage == 6:
-		gen_button(0, clues[0], None)
-		gen_button(1, clues[1], None)
-		gen_button(2, clues[2], None)
-		gen_button(3, clues[3], None)
+		gen_button(0, q['clues'][0], None)
+		gen_button(1, q['clues'][1], None)
+		gen_button(2, q['clues'][2], None)
+		gen_button(3, q['clues'][3], None)
 		res.paste(answer_bar, (pad, 3*pad + tmh + h), answer_bar)
-		(font, fh) = find_font_size([answer_text], amw, amh)
-		l = font.getlength(answer_text)
-		draw.text((tw//2 - l//2 + 2, 3*pad + tmh + h + ah//2 - fh//2 + fo + 2), answer_text, font=font, fill=(0, 0, 0))
-		draw.text((tw//2 - l//2, 3*pad + tmh + h + ah//2 - fh//2 + fo), answer_text, font=font, fill=(249, 254, 255))
+		(font, fh) = find_font_size([q['answer']], amw, amh)
+		l = font.getlength(q['answer'])
+		draw.text((tw//2 - l//2 + 2, 3*pad + tmh + h + ah//2 - fh//2 + fo + 2), q['answer'], font=font, fill=(0, 0, 0))
+		draw.text((tw//2 - l//2, 3*pad + tmh + h + ah//2 - fh//2 + fo), q['answer'], font=font, fill=(249, 254, 255))
 
 	image_file = open(filename, "wb") if filename is not None else io.BytesIO()
 	res.save(image_file, 'PNG')
@@ -193,4 +195,41 @@ def gen_wall(clues, num_done, selections, filename=None):
 	image_file.seek(0)
 	return image_file
 
+
+def gen_score(teams, scores, filename=None):
+	pad = 12	# padding between elements
+	w = 1183	# width of a team name bar
+	sw = 281	# width of the score box
+	h = 187	# height of either
+	mw = w - 48	# maximum width of the team name text
+	msw = sw - 48	# maximum width of the score text
+	mh = h - 12	# maximum height of the text
+	fo = 20	# adjustment by which text is moved down to make it look vertically centered
+	tw = w + 3*pad + sw	# total width of the output bitmap
+	th = 2*h + 3*pad	# total height of the output bitmap
+
+	res = Image.new('RGB', (tw, th), (54, 57, 63))
+	draw = ImageDraw.Draw(res)
+
+	def dodraw(score_bar, team_name, score, y):
+		res.paste(score_bar, (pad, pad + y), score_bar)
+		res.paste(score_box, (2*pad + w, pad + y), score_box)
+
+		(font, fh) = find_font_size([team_name], mw, mh, start_size=128)
+		fo1 = fo*fh/149
+		draw.text((pad + 24 + 2, pad + 6 + fo1 + y + h//2 - fh//2 + 2), team_name, font=font, fill=(0, 0, 0))
+		draw.text((pad + 24, pad + 6 + fo1 + y + h//2 - fh//2), team_name, font=font, fill=(249, 254, 255))
+
+		(font, fh) = find_font_size([score], msw, mh, start_size=128)
+		fo1 = fo*fh/149
+		l = font.getlength(score)
+		draw.text((2*pad + w + sw//2 - l//2, pad + 6 + fo1 + y + h//2 - fh//2), score, font=font, fill=(5, 47, 85))
+
+	dodraw(score_bar_1, teams[0], str(scores[0]), 0)
+	dodraw(score_bar_2, teams[1], str(scores[1]), pad+h)
+
+	image_file = open(filename, "wb") if filename is not None else io.BytesIO()
+	res.save(image_file, 'PNG')
+	image_file.seek(0)
+	return image_file
 

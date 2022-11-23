@@ -1,108 +1,1072 @@
 {
-	"teams": [
-		{
-			"name": "Test team",
-			"players": ['175298987086053376'],
-			"score": 0
-		},
-		{
-			"name": "Tryout team",
-			"players": ['175298987086053376'],
-			"score": 0
-		}
-	],
-	"ongoing": null,
-	"batches_used": [],
-	"batches": [
-		{
-			"connections": [
-				{"answer":"Fictional newspapers with Daily",	"clues":["Danville",	"Planet",	"Bugle",	"Prophet"],	"notes":"Danville = Phineas and Ferb\nPlanet = Superman\nBugle = Spider-Man\nProphet = Harry Potter"},
-				{"answer":"Genus = Species",	"clues":["Greylag\ngoose",	"Red fox",	"Common\nswan",	"Western\ngorilla"],	"notes":"Anser anser, Vulpes vulpes, Cygnus cygnus, Gorilla gorilla"},
-				{"answer":"Flag of a country’s largest region",	"clues":["image:ConB1.png",	"image:ConB2.png",	"image:ConB3.png",	"image:ConB4.png"],	"notes":"Sicily/Italy\nHokkaido/Japan\nBavaria/Germany\nAlaska/USA"},
-				{"answer":"Diamonds",	"clues":["image:ConA1.png",	"image:ConA2.jpg",	"image:ConA3.png",	"image:ConA4.png"],	"notes":"Unapologetic (Rihanna album)\nWrigley Field (baseball)\nDeck of cards\nMir mine"},
-				{"answer":"Anagrams of ADN",	"clues":["Confidentiality\ncontract",	"US\nVice President\nQuayle",	"Genetic\nmaterial",	"Conjunction"],	"notes":"NDA, Dan, DNA, and"},
-				{"answer":"Personal pronouns (Her, You, It, Me)",	"clues":["2013\nSpike Jonze\nmovie",	"2006\nTime Person\nof the Year",	"1986\nStephen King\nnovel",	"Montenegro’s\nTLD"],	"notes":""}
-			],
-			"sequences": [
-				{"answer":"Missing double solfège",	"clues":["El ra",	"Entpneur",	"Desequaver",	"(e.g.) All"],	"notes":"El Dorado, Entrepreneur, Demisemiquaver, Alfalfa"},
-				{"answer":"Dart board",	"clues":["Due east:\n50, 25, 6, 18,\n6, 12, 0",	"Due south:\n50, 25, 3, 9,\n3, 6, 0",	"Due west:\n50, 25, 11, 33,\n11, 22, 0",	"Due north:\n50, 25, 20, 60,\n20, 40, 0"],	"notes":""},
-				{"answer":"One, Two, Buckle My Shoe",	"clues":["image:SeqB1.jpg",	"image:SeqB2.jpg",	"image:SeqB3.jpg",	"image:SeqB4.jpg"],	"notes":"One, two, buckle my shoe\nThree, four, knock at the door\nFive, six, pick up sticks\nSeven, eight, lay them straight"},
-				{"answer":"Bingo, Bing, Bin, Bi",	"clues":["Game with\na 5×5 grid",	"Search engine",	"Garbage can",	"(e.g.)\nSexual orientation;\nelement 83; etc."],	"notes":""},
-				{"answer":"Indirectly clued 7-segment display",	"clues":["image:SeqA1.png",	"image:SeqA2.png",	"image:SeqA3.png",	"image:SeqA4.png"],	"notes":"(top) 0 0 1; (left) 0 1 0 1 0\n(top) 1 3 1; (left) 1 1 1 1 1\n(top) 0 3 2; (left) 1 1 1 1 1\n(top) 1 1 2; (left) 0 2 1 1 0"},
-				{"answer":"Bands with numbers missing",	"clues":["Maroon",	"The Seasons",	"Doors Down",	"(e.g.) U"],	"notes":""}
-			]
-		},
-		{
-			"connections": [
-				{"answer":"Types of mushrooms",	"clues":["Panther",	"Oyster",	"King trumpet",	"Death Cap"],	"notes":""},
-				{"answer":"US State Capitals",	"clues":["image:ConD1.jpg",	"image:ConD2.jpg",	"image:ConD3.jpg",	"image:ConD4.jpg"],	"notes":"JACKSON Belleville (Gilmore Girls)\nMONTGOMERY Scott (Star Trek)\nAUSTIN Powers (Austin Powers)\nPHOENIX Wright (Ace Attorney)"},
-				{"answer":"Army ranks (first 4 letters)",	"clues":["Lieu",	"Gene",	"Colo",	"Capt"],	"notes":""},
-				{"answer":"Hidden Old English letters",	"clues":["Fashion",	"Tether",	"Hawthorne",	"Yoghurt"],	"notes":""},
-				{"answer":"Characters who don’t speak",	"clues":["The Thin Man",	"Navajas",	"Jason Voorhees",	"Gromit"],	"notes":"The Thin Man = Charlie’s Angels\nNavajas = Desperado\nJason Voorhees = Friday the 13th\nGromit = Wallace & Gromit"},
-				{"answer":"___lock",	"clues":["image:ConC1.png",	"image:ConC2.jpg",	"image:ConC3.jpg",	"image:ConC4.jpg"],	"notes":"Hemlock (plant)\nWenlock (Olympic mascot)\nPollock (painter)\nPadlock"}
-			],
-			"sequences": [
-				{"answer":"Winston Churchill speech",	"clues":["Beaches",	"Landing\ngrounds",	"Fields and\nstreets",	"Hills"],	"notes":""},
-				{"answer":"The Twelve Gays of Christmas",	"clues":["image:SeqC1.jpg",	"image:SeqC2.jpg",	"image:SeqC3.jpg",	"image:SeqC4.jpg"],	"notes":"4 falling birds\n3 wrench hens\n2 hurdle doves\nand a cartridge in a pear tree"},
-				{"answer":"We Didn’t Start The Fire",	"clues":["image:SeqD1.jpg",	"image:SeqD2.jpg",	"image:SeqD3.jpg",	"image:SeqD4.jpg"],	"notes":"Harry Truman, Doris Day\nRed China, Johnnie Ray\nSouth Pacific, Walter Winchell\nJoe DiMaggio"},
-				{"answer":"MANY, shaved from both sides",	"clues":["fullimage:SeqJ1.png",	"fullimage:SeqJ2.png",	"fullimage:SeqJ3.png",	"fullimage:SeqJ4.png"],	"notes":"A lot of; A lot of (MANY MANY)\nWhichever; Male (ANY MAN)\nNew York; Massachusetts (NY MA)\n(e.g.) Yankee; Mike (Y M)"},
-				{"answer":"Prime-positioned letters in prime-positioned Harry Potter titles",	"clues":["_ a r _ y     _ o _ _ _ r\n_ n _     _ _ e\n_ h _ _ _ e _     _ _\n_ _ c _ e _ _",	"_ a r _ y     _ o _ _ _ r\n_ n _     _ _ e\n_ r _ _ _ n _ _     _ _\n_ z _ a _ _ _",	"_ a r _ y     _ o _ _ _ r\n_ n _     _ _ e\n_ r _ _ _     o _\n_ _ _     _ h _ e _ _ _",	"_ a r _ y     _ o _ _ _ r\n_ n _     _ _ e\n_ e _ _ _ l _\n_ _ _ _ o _ s"],	"notes":""},
-				{"answer":"Number of eyes (4, 3, 2, 1)",	"clues":["Dr. Jumba\nJookiba\n(Lilo & Stitch)",	"Garnet\n(Steven\nUniverse)",	"Voltorb\n(Pokémon)",	"(e.g.) Unown,\nMike Wazowski,\nBill Cipher, etc."],	"notes":""}
-			]
-		},
-		{
-			"connections": [
-				{"answer":"Keep Talking and Nobody Explodes modules",	"clues":["Who’s On First",	"Simon Says",	"Morse Code",	"Memory"],	"notes":""},
-				{"answer":"per___ive",	"clues":["tolerant\nmiss",	"rhythmic\ncuss",	"ubiquitous\nvas",	"outlook\nspect"],	"notes":""},
-				{"answer":"Sandwiches",	"clues":["image:ConE1.jpg",	"image:ConE2.jpg",	"image:ConE3.png",	"image:ConE4.jpg"],	"notes":"Submarine\nClub\nCuban\nHero"},
-				{"answer":"Smallest",	"clues":["Island:\nSimping",	"Human:\nChandra\nBahadur Dangi",	"Nuclear weapon:\nDavy Crockett",	"Bird:\nBee hummingbird"],	"notes":""},
-				{"answer":"Fake middle initials",	"clues":["David O.\nSelznick",	"Michael J.\nFox",	"Ulysses S.\nGrant",	"J. K.\nRowling"],	"notes":""},
-				{"answer":"Return of the ____",	"clues":["image:ConF1.jpg",	"image:ConF2.jpg",	"image:ConF3.png",	"image:ConF4.jpg"],	"notes":"Prodigal Son (Rembrandt painting)\nLiving Dead (1985 movie)\nObra Dinn (video game)\nKing (novel)"}
-			],
-			"sequences": [
-				{"answer":"Crosby, Stills, Nash & Young",	"clues":["image:SeqF1.jpg",	"image:SeqF2.jpg",	"image:SeqF3.jpg",	"image:SeqF4.jpg"],	"notes":"Bing Crosby, singer\nGary Stills, NFL\nJohn Nash, mathematician\nJohn Young, astronaut"},
-				{"answer":"ASHEN, ASHE, ASH, AS",	"clues":["Very pale",	"Tennis legend\nArthur",	"Fire residue",	"(e.g.) Like"],	"notes":""},
-				{"answer":"1 in languages with most native speakers",	"clues":["fullimage:SeqX1.png",	"One",	"Uno",	"fullimage:SeqX4.png"],	"notes":""},
-				{"answer":"Fingers",	"clues":["image:SeqE1.png",	"image:SeqE2.png",	"image:SeqE3.png",	"image:SeqE4.png"],	"notes":"Index\nMiddle\nRing\nPinky"},
-				{"answer":"Number of bordering countries",	"clues":["3:\nNorth Korea",	"2:\nUnited States",	"1:\nHaiti",	"0: (e.g.)\nAustralia"],	"notes":""},
-				{"answer":"asdfmovie 1–4",	"clues":["Got your nose!",	"I baked you\na pie!",	"Hey man,\nlook at my\nnew dog!",	"I’m gonna\ndo an\nInternet!"],	"notes":""}
-			]
-		},
-		{
-			"connections": [
-				{"answer":"Left-handed emoticons",	"clues":["C: Happiness",	"D: Sadness",	"O: Surprise",	"I: Emotionlessness"],	"notes":""},
-				{"answer":"Teletubbies",	"clues":["fullimage:ConK1.png",	"fullimage:ConK2.png",	"fullimage:ConK3.png",	"fullimage:ConK4.png"],	"notes":"Green Line: Dipsy\nYellow Loop: Laa-Laa\nRed Ring: Po\nPurple Triangle: Tinky Winky"},
-				{"answer":"Flag semaphore",	"clues":["image:ConH1.png",	"image:ConH2.png",	"image:ConH3.png",	"image:ConH4.png"],	"notes":"F\nV\nD\nR"},
-				{"answer":"Geography with missing Ar-",	"clues":["Uba",	"Kansas",	"Menia",	"Gentina"],	"notes":""},
-				{"answer":"Tom Scott game shows",	"clues":["Questionable",	"The Technical\nDifficulties",	"Game On",	"Lateral"],	"notes":""},
-				{"answer":"Planets with axial tilt",	"clues":["image:ConI1.png",	"image:ConI2.png",	"image:ConI3.png",	"image:ConI4.png"],	"notes":"Mercury: 0.034°\nVenus: 177.36°\nUranus: 97.77°\nEarth: 23.44°"}
-			],
-			"sequences": [
-				{"answer":"Weight classes in boxing",	"clues":["image:SeqG1.png",	"image:SeqG2.jpg",	"image:SeqG3.jpg",	"image:SeqG4.jpg"],	"notes":"Light\nFeather\nBantam\nFly"},
-				{"answer":"Martin Luther King Jr’s dreams",	"clues":["... all men\nare created\nequal.",	"... at the\ntable of\nbrotherhood.",	"... an oasis of\nfreedom and\njustice.",	"... the content\nof their\ncharacter."],	"notes":""},
-				{"answer":"Movies with ever-fewer M’s",	"clues":["image:SeqH1.jpg",	"image:SeqH2.jpg",	"image:SeqH3.jpg",	"image:SeqH4.jpg"],	"notes":"Mamma Mia!\nThe Mummy\nMemento\nMulan"},
-				{"answer":"Most viewed YouTube videos",	"clues":["“GS” (P),\nNov 2012 –\nJul 2017",	"“SYA” (WK),\nJul 2017 –\nAug 2017",	"“D” (LF),\nAug 2017 –\nNov 2020",	"“BSD” (PBSKS&S),\nNov 2020 –\npresent"],	"notes":"Gangnam Style; Psy\nSee You Again; Wiz Khalifa\nDespacito; Luis Fonsi\nBaby Shark Dance; Pinkfong Baby Shark - Kids' Songs & Stories"},
-				{"answer":"Angles (acute, right, obtuse, straight)",	"clues":["á",	"fullimage:SeqY2.png",	"not quick or alert\nin perception\nor intellect",	"(e.g.)\nheterosexual"],	"notes":""},
-				{"answer":"MITMH Writers 2018–2021",	"clues":["Life and Order\n(formerly Death\nand Mayhem)",	"Setec\nAstronomy",	"Left Out",	"fullimage:SeqZ4.png"],	"notes":""}
-			]
-		},
-		{
-			"connections": [
-				{"answer":"Planets and their largest moon",	"clues":["Sea has\nthe sea",	"Sky and thunder\nhas a hero\nfrom Troy",	"War has fear",	"Beauty doesn’t\nhave any"],	"notes":""},
-				{"answer":"___ vs. ___",	"clues":["image:ConJ1.png",	"image:ConJ2.png",	"image:ConJ3.png",	"image:ConJ4.png"],	"notes":"The Mitchells vs. the Machines\nSpy vs. Spy\nAlien vs. Predator\nPlants vs. Zombies"},
-				{"answer":"Star Trek series",	"clues":["image:ConG1.jpg",	"image:ConG2.png",	"image:ConG3.jpg",	"image:ConG4.png"],	"notes":"The Next Generation\nLower Decks\nDeep Space 9\nVoyager"},
-				{"answer":"US presidents with unique properties",	"clues":["Federalist:\nAdams",	"twice:\nCleveland",	"Dutch speaker:\nVan Buren",	"black:\nObama"],	"notes":""},
-				{"answer":"Happy",	"clues":["Hour of\ndrinking",	"Feet movie",	"Meal at\nMcDonald’s",	"Tears cried\nin joy"],	"notes":""},
-				{"answer":"Teapot",	"clues":["Bertrand’s\nanalogy",	"Song by\nClarence Kelley",	"Test model\nin 3D graphics",	"HTTP error\n418"],	"notes":""}
-			],
-			"sequences": [
-				{"answer":"US state abbreviations by Scrabble scores",	"clues":["6:\nAlaska = 1+5\nOklahoma = 1+5\nKansas = 5+1",	"8:\nWest Virginia = 4+4\nWyoming = 4+4",	"9:\nNew Jersey = 1+8\nTexas = 1+8\nKentucky = 5+4",	"11:\nArizona = 1+10"],	"notes":""},
-				{"answer":"Carbon chain",	"clues":["Speed (drug)",	"ð",	"Fake object\nused by actors",	"However"],	"notes":""},
-				{"answer":"Rainbow movie actors",	"clues":["Rosalie\nChiang",	"Malcolm\nMcDowell",	"Geoffrey\nHughes",	"(e.g.) Ryan\nReynolds"],	"notes":"Meilin Lee - Turning Red\nAlex DeLarge - A Clockwork Orange\nPaul McCartney - Yellow Submarine\nHal Jordan - Green Lantern"},
-				{"answer":"Count letters",	"clues":["fullimage:SeqW1.png",	"fullimage:SeqW2.png",	"fullimage:SeqW3.png",	"fullimage:SeqW4.png"],	"notes":""},
-				{"answer":"Braille",	"clues":["image:SeqI1.png",	"image:SeqI2.png",	"image:SeqI3.png",	"image:SeqI4.png"],	"notes":"GG\nGG\nFF\nF\nCC\nA"},
-				{"answer":"Dr. Seuss Spoonerisms",	"clues":["Fun wish",	"Foo tish",	"Fed rish",	"Foo blish"],	"notes":""}
-			]
-		}
-	]
+    "teams": [
+        {
+            "name": "Test team",
+            "players": [
+                175298987086053376
+            ],
+            "score": 0
+        },
+        {
+            "name": "Tryout team",
+            "players": [
+                434049444829462539
+            ],
+            "score": 0
+        }
+    ],
+    "ongoing": null,
+    "batches_used": [],
+    "batches": [
+        {
+            "connections": [
+                {
+                    "answer": "Fictional newspapers with Daily",
+                    "clues": [
+                        "Danville",
+                        "Planet",
+                        "Bugle",
+                        "Prophet"
+                    ],
+                    "notes": "Danville = Phineas and Ferb\nPlanet = Superman\nBugle = Spider-Man\nProphet = Harry Potter"
+                },
+                {
+                    "answer": "Genus = Species",
+                    "clues": [
+                        "Greylag\ngoose",
+                        "Red fox",
+                        "Common\nswan",
+                        "Western\ngorilla"
+                    ],
+                    "notes": "Anser anser, Vulpes vulpes, Cygnus cygnus, Gorilla gorilla"
+                },
+                {
+                    "answer": "Flag of a country’s largest region",
+                    "clues": [
+                        "image:ConB1.png",
+                        "image:ConB2.png",
+                        "image:ConB3.png",
+                        "image:ConB4.png"
+                    ],
+                    "notes": "Sicily/Italy\nHokkaido/Japan\nBavaria/Germany\nAlaska/USA"
+                },
+                {
+                    "answer": "Diamonds",
+                    "clues": [
+                        "image:ConA1.png",
+                        "image:ConA2.jpg",
+                        "image:ConA3.png",
+                        "image:ConA4.png"
+                    ],
+                    "notes": "Unapologetic (Rihanna album)\nWrigley Field (baseball)\nDeck of cards\nMir mine"
+                },
+                {
+                    "answer": "Anagrams of ADN",
+                    "clues": [
+                        "Confidentiality\ncontract",
+                        "US\nVice President\nQuayle",
+                        "Genetic\nmaterial",
+                        "Conjunction"
+                    ],
+                    "notes": "NDA, Dan, DNA, and"
+                },
+                {
+                    "answer": "Personal pronouns (Her, You, It, Me)",
+                    "clues": [
+                        "2013\nSpike Jonze\nmovie",
+                        "2006\nTime Person\nof the Year",
+                        "1986\nStephen King\nnovel",
+                        "Montenegro’s\nTLD"
+                    ],
+                    "notes": ""
+                }
+            ],
+            "sequences": [
+                {
+                    "answer": "Missing double solfège",
+                    "clues": [
+                        "El ra",
+                        "Entpneur",
+                        "Desequaver",
+                        "(e.g.) All"
+                    ],
+                    "notes": "El Dorado, Entrepreneur, Demisemiquaver, Alfalfa"
+                },
+                {
+                    "answer": "Dart board",
+                    "clues": [
+                        "Due east:\n50, 25, 6, 18,\n6, 12, 0",
+                        "Due south:\n50, 25, 3, 9,\n3, 6, 0",
+                        "Due west:\n50, 25, 11, 33,\n11, 22, 0",
+                        "Due north:\n50, 25, 20, 60,\n20, 40, 0"
+                    ],
+                    "notes": ""
+                },
+                {
+                    "answer": "One, Two, Buckle My Shoe",
+                    "clues": [
+                        "image:SeqB1.jpg",
+                        "image:SeqB2.jpg",
+                        "image:SeqB3.jpg",
+                        "image:SeqB4.jpg"
+                    ],
+                    "notes": "One, two, buckle my shoe\nThree, four, knock at the door\nFive, six, pick up sticks\nSeven, eight, lay them straight"
+                },
+                {
+                    "answer": "Bingo, Bing, Bin, Bi",
+                    "clues": [
+                        "Game with\na 5×5 grid",
+                        "Search engine",
+                        "Garbage can",
+                        "(e.g.)\nSexual orientation;\nelement 83; etc."
+                    ],
+                    "notes": ""
+                },
+                {
+                    "answer": "Indirectly clued 7-segment display",
+                    "clues": [
+                        "image:SeqA1.png",
+                        "image:SeqA2.png",
+                        "image:SeqA3.png",
+                        "image:SeqA4.png"
+                    ],
+                    "notes": "(top) 0 0 1; (left) 0 1 0 1 0\n(top) 1 3 1; (left) 1 1 1 1 1\n(top) 0 3 2; (left) 1 1 1 1 1\n(top) 1 1 2; (left) 0 2 1 1 0"
+                },
+                {
+                    "answer": "Bands with numbers missing",
+                    "clues": [
+                        "Maroon",
+                        "The Seasons",
+                        "Doors Down",
+                        "(e.g.) U"
+                    ],
+                    "notes": ""
+                }
+            ],
+            "walls": [
+                {
+                    "groups": [
+                        {
+                            "answer": "Instant Messengers",
+                            "clues": [
+                                "Viber",
+                                "Signal",
+                                "Telegram",
+                                "Line"
+                            ]
+                        },
+                        {
+                            "answer": "MLP:FiM minor characters",
+                            "clues": [
+                                "Discord",
+                                "Zecora",
+                                "Spike",
+                                "Chrysalis"
+                            ]
+                        },
+                        {
+                            "answer": "Rem___",
+                            "clues": [
+                                "Ember",
+                                "Oval",
+                                "Ark",
+                                "Aster"
+                            ]
+                        },
+                        {
+                            "answer": "Ends in ‘grown’",
+                            "clues": [
+                                "Smolder",
+                                "Engaged",
+                                "Stripe",
+                                "Armature"
+                            ]
+                        }
+                    ],
+                    "url": "https://puzzgrid.com/grid/64963"
+                },
+                {
+                    "groups": [
+                        {
+                            "answer": "PAW Patrol",
+                            "clues": [
+                                "Skye",
+                                "Rocky",
+                                "Rubble",
+                                "Zuma"
+                            ]
+                        },
+                        {
+                            "answer": "Change first letter to P",
+                            "clues": [
+                                "Chase",
+                                "Rarity",
+                                "Crime",
+                                "Tower"
+                            ]
+                        },
+                        {
+                            "answer": "Smokables",
+                            "clues": [
+                                "Joint",
+                                "Reefer",
+                                "Spliff",
+                                "Stick"
+                            ]
+                        },
+                        {
+                            "answer": "___ plan",
+                            "clues": [
+                                "Marshall",
+                                "Master",
+                                "Flight",
+                                "Floor"
+                            ]
+                        }
+                    ],
+                    "url": "https://puzzgrid.com/grid/64964"
+                }
+            ]
+        },
+        {
+            "connections": [
+                {
+                    "answer": "Types of mushrooms",
+                    "clues": [
+                        "Panther",
+                        "Oyster",
+                        "King trumpet",
+                        "Death Cap"
+                    ],
+                    "notes": ""
+                },
+                {
+                    "answer": "US State Capitals",
+                    "clues": [
+                        "image:ConD1.jpg",
+                        "image:ConD2.jpg",
+                        "image:ConD3.jpg",
+                        "image:ConD4.jpg"
+                    ],
+                    "notes": "JACKSON Belleville (Gilmore Girls)\nMONTGOMERY Scott (Star Trek)\nAUSTIN Powers (Austin Powers)\nPHOENIX Wright (Ace Attorney)"
+                },
+                {
+                    "answer": "Army ranks (first 4 letters)",
+                    "clues": [
+                        "Lieu",
+                        "Gene",
+                        "Colo",
+                        "Capt"
+                    ],
+                    "notes": ""
+                },
+                {
+                    "answer": "Hidden Old English letters",
+                    "clues": [
+                        "Fashion",
+                        "Tether",
+                        "Hawthorne",
+                        "Yoghurt"
+                    ],
+                    "notes": ""
+                },
+                {
+                    "answer": "Characters who don’t speak",
+                    "clues": [
+                        "The Thin Man",
+                        "Navajas",
+                        "Jason Voorhees",
+                        "Gromit"
+                    ],
+                    "notes": "The Thin Man = Charlie’s Angels\nNavajas = Desperado\nJason Voorhees = Friday the 13th\nGromit = Wallace & Gromit"
+                },
+                {
+                    "answer": "___lock",
+                    "clues": [
+                        "image:ConC1.png",
+                        "image:ConC2.jpg",
+                        "image:ConC3.jpg",
+                        "image:ConC4.jpg"
+                    ],
+                    "notes": "Hemlock (plant)\nWenlock (Olympic mascot)\nPollock (painter)\nPadlock"
+                }
+            ],
+            "sequences": [
+                {
+                    "answer": "Winston Churchill speech",
+                    "clues": [
+                        "Beaches",
+                        "Landing\ngrounds",
+                        "Fields and\nstreets",
+                        "Hills"
+                    ],
+                    "notes": ""
+                },
+                {
+                    "answer": "The Twelve Gays of Christmas",
+                    "clues": [
+                        "image:SeqC1.jpg",
+                        "image:SeqC2.jpg",
+                        "image:SeqC3.jpg",
+                        "image:SeqC4.jpg"
+                    ],
+                    "notes": "4 falling birds\n3 wrench hens\n2 hurdle doves\nand a cartridge in a pear tree"
+                },
+                {
+                    "answer": "We Didn’t Start The Fire",
+                    "clues": [
+                        "image:SeqD1.jpg",
+                        "image:SeqD2.jpg",
+                        "image:SeqD3.jpg",
+                        "image:SeqD4.jpg"
+                    ],
+                    "notes": "Harry Truman, Doris Day\nRed China, Johnnie Ray\nSouth Pacific, Walter Winchell\nJoe DiMaggio"
+                },
+                {
+                    "answer": "MANY, shaved from both sides",
+                    "clues": [
+                        "fullimage:SeqJ1.png",
+                        "fullimage:SeqJ2.png",
+                        "fullimage:SeqJ3.png",
+                        "fullimage:SeqJ4.png"
+                    ],
+                    "notes": "A lot of; A lot of (MANY MANY)\nWhichever; Male (ANY MAN)\nNew York; Massachusetts (NY MA)\n(e.g.) Yankee; Mike (Y M)"
+                },
+                {
+                    "answer": "Prime-positioned letters in prime-positioned Harry Potter titles",
+                    "clues": [
+                        "_ a r _ y     _ o _ _ _ r\n_ n _     _ _ e\n_ h _ _ _ e _     _ _\n_ _ c _ e _ _",
+                        "_ a r _ y     _ o _ _ _ r\n_ n _     _ _ e\n_ r _ _ _ n _ _     _ _\n_ z _ a _ _ _",
+                        "_ a r _ y     _ o _ _ _ r\n_ n _     _ _ e\n_ r _ _ _     o _\n_ _ _     _ h _ e _ _ _",
+                        "_ a r _ y     _ o _ _ _ r\n_ n _     _ _ e\n_ e _ _ _ l _\n_ _ _ _ o _ s"
+                    ],
+                    "notes": ""
+                },
+                {
+                    "answer": "Number of eyes (4, 3, 2, 1)",
+                    "clues": [
+                        "Dr. Jumba\nJookiba\n(Lilo & Stitch)",
+                        "Garnet\n(Steven\nUniverse)",
+                        "Voltorb\n(Pokémon)",
+                        "(e.g.) Unown,\nMike Wazowski,\nBill Cipher, etc."
+                    ],
+                    "notes": ""
+                }
+            ],
+            "walls": [
+                {
+                    "groups": [
+                        {
+                            "answer": "Quarks",
+                            "clues": [
+                                "Up",
+                                "Down",
+                                "Bottom",
+                                "Charm"
+                            ]
+                        },
+                        {
+                            "answer": "Doctor ___",
+                            "clues": [
+                                "Strange",
+                                "Manhattan",
+                                "Who",
+                                "Octopus"
+                            ]
+                        },
+                        {
+                            "answer": "Spinning things",
+                            "clues": [
+                                "Top",
+                                "Earth",
+                                "CD-ROM",
+                                "Mill"
+                            ]
+                        },
+                        {
+                            "answer": "Social atmosphere anagrams",
+                            "clues": [
+                                "Doom",
+                                "Fleeing",
+                                "Mail etc",
+                                "Peter M"
+                            ]
+                        }
+                    ],
+                    "url": "https://puzzgrid.com/grid/64965"
+                },
+                {
+                    "groups": [
+                        {
+                            "answer": "Tall buildings",
+                            "clues": [
+                                "Empire",
+                                "Burj",
+                                "Petronas",
+                                "One"
+                            ]
+                        },
+                        {
+                            "answer": "Star Wars title words",
+                            "clues": [
+                                "Return",
+                                "Phantom",
+                                "Revenge",
+                                "Force"
+                            ]
+                        },
+                        {
+                            "answer": "Ends in a fastener",
+                            "clues": [
+                                "Attack",
+                                "Chopin",
+                                "Snail",
+                                "Privet"
+                            ]
+                        },
+                        {
+                            "answer": "___ Age",
+                            "clues": [
+                                "New",
+                                "Space",
+                                "Ice",
+                                "Golden"
+                            ]
+                        }
+                    ],
+                    "url": "https://puzzgrid.com/grid/64966"
+                }
+            ]
+        },
+        {
+            "connections": [
+                {
+                    "answer": "Keep Talking and Nobody Explodes modules",
+                    "clues": [
+                        "Who’s On First",
+                        "Simon Says",
+                        "Morse Code",
+                        "Memory"
+                    ],
+                    "notes": ""
+                },
+                {
+                    "answer": "per___ive",
+                    "clues": [
+                        "tolerant\nmiss",
+                        "rhythmic\ncuss",
+                        "ubiquitous\nvas",
+                        "outlook\nspect"
+                    ],
+                    "notes": ""
+                },
+                {
+                    "answer": "Sandwiches",
+                    "clues": [
+                        "image:ConE1.jpg",
+                        "image:ConE2.jpg",
+                        "image:ConE3.png",
+                        "image:ConE4.jpg"
+                    ],
+                    "notes": "Submarine\nClub\nCuban\nHero"
+                },
+                {
+                    "answer": "Smallest",
+                    "clues": [
+                        "Island:\nSimping",
+                        "Human:\nChandra\nBahadur Dangi",
+                        "Nuclear weapon:\nDavy Crockett",
+                        "Bird:\nBee hummingbird"
+                    ],
+                    "notes": ""
+                },
+                {
+                    "answer": "Fake middle initials",
+                    "clues": [
+                        "David O.\nSelznick",
+                        "Michael J.\nFox",
+                        "Ulysses S.\nGrant",
+                        "J. K.\nRowling"
+                    ],
+                    "notes": ""
+                },
+                {
+                    "answer": "Return of the ____",
+                    "clues": [
+                        "image:ConF1.jpg",
+                        "image:ConF2.jpg",
+                        "image:ConF3.png",
+                        "image:ConF4.jpg"
+                    ],
+                    "notes": "Prodigal Son (Rembrandt painting)\nLiving Dead (1985 movie)\nObra Dinn (video game)\nKing (novel)"
+                }
+            ],
+            "sequences": [
+                {
+                    "answer": "Crosby, Stills, Nash & Young",
+                    "clues": [
+                        "image:SeqF1.jpg",
+                        "image:SeqF2.jpg",
+                        "image:SeqF3.jpg",
+                        "image:SeqF4.jpg"
+                    ],
+                    "notes": "Bing Crosby, singer\nGary Stills, NFL\nJohn Nash, mathematician\nJohn Young, astronaut"
+                },
+                {
+                    "answer": "ASHEN, ASHE, ASH, AS",
+                    "clues": [
+                        "Very pale",
+                        "Tennis legend\nArthur",
+                        "Fire residue",
+                        "(e.g.) Like"
+                    ],
+                    "notes": ""
+                },
+                {
+                    "answer": "1 in languages with most native speakers",
+                    "clues": [
+                        "fullimage:SeqX1.png",
+                        "One",
+                        "Uno",
+                        "fullimage:SeqX4.png"
+                    ],
+                    "notes": ""
+                },
+                {
+                    "answer": "Fingers",
+                    "clues": [
+                        "image:SeqE1.png",
+                        "image:SeqE2.png",
+                        "image:SeqE3.png",
+                        "image:SeqE4.png"
+                    ],
+                    "notes": "Index\nMiddle\nRing\nPinky"
+                },
+                {
+                    "answer": "Number of bordering countries",
+                    "clues": [
+                        "3:\nNorth Korea",
+                        "2:\nUnited States",
+                        "1:\nHaiti",
+                        "0: (e.g.)\nAustralia"
+                    ],
+                    "notes": ""
+                },
+                {
+                    "answer": "asdfmovie 1–4",
+                    "clues": [
+                        "Got your nose!",
+                        "I baked you\na pie!",
+                        "Hey man,\nlook at my\nnew dog!",
+                        "I’m gonna\ndo an\nInternet!"
+                    ],
+                    "notes": ""
+                }
+            ],
+            "walls": [
+                {
+                    "groups": [
+                        {
+                            "answer": "___ family",
+                            "clues": [
+                                "Extended",
+                                "Addams",
+                                "Font",
+                                "Immediate"
+                            ]
+                        },
+                        {
+                            "answer": "Ends in readable",
+                            "clues": [
+                                "Nuclear",
+                                "Chaplain",
+                                "Albright",
+                                "Indistinct"
+                            ]
+                        },
+                        {
+                            "answer": "Lorde songs",
+                            "clues": [
+                                "Royals",
+                                "Supercut",
+                                "Ribs",
+                                "Liability"
+                            ]
+                        },
+                        {
+                            "answer": "A-___",
+                            "clues": [
+                                "Team",
+                                "Game",
+                                "List",
+                                "OK"
+                            ]
+                        }
+                    ],
+                    "url": "https://puzzgrid.com/grid/65395"
+                },
+                {
+                    "groups": [
+                        {
+                            "answer": "Top ___",
+                            "clues": [
+                                "Gun",
+                                "Gear",
+                                "Notch",
+                                "Ten"
+                            ]
+                        },
+                        {
+                            "answer": "___ch",
+                            "clues": [
+                                "Hat",
+                                "Cat",
+                                "Tea",
+                                "Bran"
+                            ]
+                        },
+                        {
+                            "answer": "Famous Millers",
+                            "clues": [
+                                "Bea",
+                                "Arthur",
+                                "Glenn",
+                                "Frank"
+                            ]
+                        },
+                        {
+                            "answer": "Procedure words in radio",
+                            "clues": [
+                                "Roger",
+                                "Wilco",
+                                "Over",
+                                "Mayday"
+                            ]
+                        }
+                    ],
+                    "url": "https://puzzgrid.com/grid/65260"
+                }
+            ]
+        },
+        {
+            "connections": [
+                {
+                    "answer": "Left-handed emoticons",
+                    "clues": [
+                        "C: Happiness",
+                        "D: Sadness",
+                        "O: Surprise",
+                        "I: Emotionlessness"
+                    ],
+                    "notes": ""
+                },
+                {
+                    "answer": "Teletubbies",
+                    "clues": [
+                        "fullimage:ConK1.png",
+                        "fullimage:ConK2.png",
+                        "fullimage:ConK3.png",
+                        "fullimage:ConK4.png"
+                    ],
+                    "notes": "Green Line: Dipsy\nYellow Loop: Laa-Laa\nRed Ring: Po\nPurple Triangle: Tinky Winky"
+                },
+                {
+                    "answer": "Flag semaphore",
+                    "clues": [
+                        "image:ConH1.png",
+                        "image:ConH2.png",
+                        "image:ConH3.png",
+                        "image:ConH4.png"
+                    ],
+                    "notes": "F\nV\nD\nR"
+                },
+                {
+                    "answer": "Geography with missing Ar-",
+                    "clues": [
+                        "Uba",
+                        "Kansas",
+                        "Menia",
+                        "Gentina"
+                    ],
+                    "notes": ""
+                },
+                {
+                    "answer": "Tom Scott game shows",
+                    "clues": [
+                        "Questionable",
+                        "The Technical\nDifficulties",
+                        "Game On",
+                        "Lateral"
+                    ],
+                    "notes": ""
+                },
+                {
+                    "answer": "Planets with axial tilt",
+                    "clues": [
+                        "image:ConI1.png",
+                        "image:ConI2.png",
+                        "image:ConI3.png",
+                        "image:ConI4.png"
+                    ],
+                    "notes": "Mercury: 0.034°\nVenus: 177.36°\nUranus: 97.77°\nEarth: 23.44°"
+                }
+            ],
+            "sequences": [
+                {
+                    "answer": "Weight classes in boxing",
+                    "clues": [
+                        "image:SeqG1.png",
+                        "image:SeqG2.jpg",
+                        "image:SeqG3.jpg",
+                        "image:SeqG4.jpg"
+                    ],
+                    "notes": "Light\nFeather\nBantam\nFly"
+                },
+                {
+                    "answer": "Martin Luther King Jr’s dreams",
+                    "clues": [
+                        "... all men\nare created\nequal.",
+                        "... at the\ntable of\nbrotherhood.",
+                        "... an oasis of\nfreedom and\njustice.",
+                        "... the content\nof their\ncharacter."
+                    ],
+                    "notes": ""
+                },
+                {
+                    "answer": "Movies with ever-fewer M’s",
+                    "clues": [
+                        "image:SeqH1.jpg",
+                        "image:SeqH2.jpg",
+                        "image:SeqH3.jpg",
+                        "image:SeqH4.jpg"
+                    ],
+                    "notes": "Mamma Mia!\nThe Mummy\nMemento\nMulan"
+                },
+                {
+                    "answer": "Most viewed YouTube videos",
+                    "clues": [
+                        "“GS” (P),\nNov 2012 –\nJul 2017",
+                        "“SYA” (WK),\nJul 2017 –\nAug 2017",
+                        "“D” (LF),\nAug 2017 –\nNov 2020",
+                        "“BSD” (PBSKS&S),\nNov 2020 –\npresent"
+                    ],
+                    "notes": "Gangnam Style; Psy\nSee You Again; Wiz Khalifa\nDespacito; Luis Fonsi\nBaby Shark Dance; Pinkfong Baby Shark - Kids' Songs & Stories"
+                },
+                {
+                    "answer": "Angles (acute, right, obtuse, straight)",
+                    "clues": [
+                        "á",
+                        "fullimage:SeqY2.png",
+                        "not quick or alert\nin perception\nor intellect",
+                        "(e.g.)\nheterosexual"
+                    ],
+                    "notes": ""
+                },
+                {
+                    "answer": "MITMH Writers 2018–2021",
+                    "clues": [
+                        "Life and Order\n(formerly Death\nand Mayhem)",
+                        "Setec\nAstronomy",
+                        "Left Out",
+                        "fullimage:SeqZ4.png"
+                    ],
+                    "notes": ""
+                }
+            ],
+            "walls": [
+                {
+                    "groups": [
+                        {
+                            "answer": "Shows hosted by Alex Trebek",
+                            "clues": [
+                                "Pitfall",
+                                "Battlestars",
+                                "Malcolm",
+                                "Lucky Numbers"
+                            ]
+                        },
+                        {
+                            "answer": "Double ____",
+                            "clues": [
+                                "Jeopardy",
+                                "Click",
+                                "Time",
+                                "Up"
+                            ]
+                        },
+                        {
+                            "answer": "Sara Bareilles songs",
+                            "clues": [
+                                "Brave",
+                                "Gravity",
+                                "Uncharted",
+                                "Orpheus"
+                            ]
+                        },
+                        {
+                            "answer": "Pixar movies",
+                            "clues": [
+                                "Onward",
+                                "Cars",
+                                "Coco",
+                                "Soul"
+                            ]
+                        }
+                    ],
+                    "url": "https://puzzgrid.com/grid/65390"
+                },
+                {
+                    "groups": [
+                        {
+                            "answer": "Upper ___",
+                            "clues": [
+                                "Cut",
+                                "Volta",
+                                "Class",
+                                "Case"
+                            ]
+                        },
+                        {
+                            "answer": "C keywords",
+                            "clues": [
+                                "While",
+                                "Break",
+                                "Double",
+                                "Switch"
+                            ]
+                        },
+                        {
+                            "answer": "Conjunctions with extra letter",
+                            "clues": [
+                                "Hand",
+                                "Nyet",
+                                "Abut",
+                                "Gas"
+                            ]
+                        },
+                        {
+                            "answer": "Festive events",
+                            "clues": [
+                                "Do",
+                                "Bash",
+                                "Function",
+                                "Event"
+                            ]
+                        }
+                    ],
+                    "url": "https://puzzgrid.com/grid/65391"
+                }
+            ]
+        },
+        {
+            "connections": [
+                {
+                    "answer": "Planets and their largest moon",
+                    "clues": [
+                        "Sea has\nthe sea",
+                        "Sky and thunder\nhas a hero\nfrom Troy",
+                        "War has fear",
+                        "Beauty doesn’t\nhave any"
+                    ],
+                    "notes": ""
+                },
+                {
+                    "answer": "___ vs. ___",
+                    "clues": [
+                        "image:ConJ1.png",
+                        "image:ConJ2.png",
+                        "image:ConJ3.png",
+                        "image:ConJ4.png"
+                    ],
+                    "notes": "The Mitchells vs. the Machines\nSpy vs. Spy\nAlien vs. Predator\nPlants vs. Zombies"
+                },
+                {
+                    "answer": "Star Trek series",
+                    "clues": [
+                        "image:ConG1.jpg",
+                        "image:ConG2.png",
+                        "image:ConG3.jpg",
+                        "image:ConG4.png"
+                    ],
+                    "notes": "The Next Generation\nLower Decks\nDeep Space 9\nVoyager"
+                },
+                {
+                    "answer": "US presidents with unique properties",
+                    "clues": [
+                        "Federalist:\nAdams",
+                        "twice:\nCleveland",
+                        "Dutch speaker:\nVan Buren",
+                        "black:\nObama"
+                    ],
+                    "notes": ""
+                },
+                {
+                    "answer": "Happy",
+                    "clues": [
+                        "Hour of\ndrinking",
+                        "Feet movie",
+                        "Meal at\nMcDonald’s",
+                        "Tears cried\nin joy"
+                    ],
+                    "notes": ""
+                },
+                {
+                    "answer": "Teapot",
+                    "clues": [
+                        "Bertrand’s\nanalogy",
+                        "Song by\nClarence Kelley",
+                        "Test model\nin 3D graphics",
+                        "HTTP error\n418"
+                    ],
+                    "notes": ""
+                }
+            ],
+            "sequences": [
+                {
+                    "answer": "US state abbreviations by Scrabble scores",
+                    "clues": [
+                        "6:\nAlaska = 1+5\nOklahoma = 1+5\nKansas = 5+1",
+                        "8:\nWest Virginia = 4+4\nWyoming = 4+4",
+                        "9:\nNew Jersey = 1+8\nTexas = 1+8\nKentucky = 5+4",
+                        "11:\nArizona = 1+10"
+                    ],
+                    "notes": ""
+                },
+                {
+                    "answer": "Carbon chain",
+                    "clues": [
+                        "Speed (drug)",
+                        "ð",
+                        "Fake object\nused by actors",
+                        "However"
+                    ],
+                    "notes": ""
+                },
+                {
+                    "answer": "Rainbow movie actors",
+                    "clues": [
+                        "Rosalie\nChiang",
+                        "Malcolm\nMcDowell",
+                        "Geoffrey\nHughes",
+                        "(e.g.) Ryan\nReynolds"
+                    ],
+                    "notes": "Meilin Lee - Turning Red\nAlex DeLarge - A Clockwork Orange\nPaul McCartney - Yellow Submarine\nHal Jordan - Green Lantern"
+                },
+                {
+                    "answer": "Count letters",
+                    "clues": [
+                        "fullimage:SeqW1.png",
+                        "fullimage:SeqW2.png",
+                        "fullimage:SeqW3.png",
+                        "fullimage:SeqW4.png"
+                    ],
+                    "notes": ""
+                },
+                {
+                    "answer": "Braille",
+                    "clues": [
+                        "image:SeqI1.png",
+                        "image:SeqI2.png",
+                        "image:SeqI3.png",
+                        "image:SeqI4.png"
+                    ],
+                    "notes": "GG\nGG\nFF\nF\nCC\nA"
+                },
+                {
+                    "answer": "Dr. Seuss Spoonerisms",
+                    "clues": [
+                        "Fun wish",
+                        "Foo tish",
+                        "Fed rish",
+                        "Foo blish"
+                    ],
+                    "notes": ""
+                }
+            ],
+            "walls": [
+                {
+                    "groups": [
+                        {
+                            "answer": "End with gardening tools",
+                            "clues": [
+                                "Shoe",
+                                "Drake",
+                                "Chose",
+                                "Ledger"
+                            ]
+                        },
+                        {
+                            "answer": "Astronomers",
+                            "clues": [
+                                "Kepler",
+                                "Brahe",
+                                "Halley",
+                                "Messier"
+                            ]
+                        },
+                        {
+                            "answer": "Boxing movies",
+                            "clues": [
+                                "Tyson",
+                                "Creed",
+                                "Warrior",
+                                "The Main Event"
+                            ]
+                        },
+                        {
+                            "answer": "Slang for baseball players",
+                            "clues": [
+                                "Southpaw",
+                                "Ace",
+                                "Bonus Baby",
+                                "Fireman"
+                            ]
+                        }
+                    ],
+                    "url": "https://puzzgrid.com/grid/65459"
+                },
+                {
+                    "groups": [
+                        {
+                            "answer": "___ of time",
+                            "clues": [
+                                "Nick",
+                                "Waste",
+                                "Ocarina",
+                                "Passage"
+                            ]
+                        },
+                        {
+                            "answer": "Sudoku constraints",
+                            "clues": [
+                                "Arrow",
+                                "Sandwich",
+                                "Thermometer",
+                                "Killer"
+                            ]
+                        },
+                        {
+                            "answer": "Flag of India",
+                            "clues": [
+                                "Wheel",
+                                "Orange",
+                                "White",
+                                "Green"
+                            ]
+                        },
+                        {
+                            "answer": "Clue",
+                            "clues": [
+                                "Boddy",
+                                "Plum",
+                                "Peacock",
+                                "Mustard"
+                            ]
+                        }
+                    ],
+                    "url": "https://puzzgrid.com/grid/67063"
+                }
+            ]
+        }
+    ]
 }
