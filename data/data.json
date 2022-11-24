@@ -1,22 +1,36 @@
 {
     "teams": [
         {
-            "name": "Test team",
+            "name": "TEST TEAM",
             "players": [
                 175298987086053376
             ],
             "score": 0
         },
         {
-            "name": "Tryout team",
+            "name": "TRYOUT TEAM",
             "players": [
                 434049444829462539
             ],
             "score": 0
         }
     ],
-    "ongoing": null,
-    "batches_used": [],
+    "ongoing": {
+        "round": 3,
+        "teams": [
+            0,
+            1
+        ],
+        "scores": [
+            1,
+            2
+        ],
+        "batch": 0,
+        "category": 4
+    },
+    "batches_used": [
+        0
+    ],
     "batches": [
         {
             "connections": [
@@ -225,6 +239,92 @@
                         }
                     ],
                     "url": "https://puzzgrid.com/grid/64964"
+                }
+            ],
+            "missing_vowels": [
+                {
+                    "category": "Colors and their complements",
+                    "clues": [
+                        {
+                            "clue": "RDN DCYN",
+                            "answer": "Red and Cyan"
+                        },
+                        {
+                            "clue": "PRP LNDLG HTGR N",
+                            "answer": "Purple and Light Green"
+                        },
+                        {
+                            "clue": "MT LLCGLDN DCR LNBL",
+                            "answer": "Metallic Gold and Cerulean Blue"
+                        },
+                        {
+                            "clue": "SLV RNDBLC KLV",
+                            "answer": "Silver and Black Olive"
+                        }
+                    ]
+                },
+                {
+                    "category": "Sciences and what they study",
+                    "clues": [
+                        {
+                            "clue": "V XLL LGYNDFLG S",
+                            "answer": "Vexillology and flags"
+                        },
+                        {
+                            "clue": "TX CLG YNDPS NS",
+                            "answer": "Toxicology and poisons"
+                        },
+                        {
+                            "clue": "SS MLG YNDR THQ KS",
+                            "answer": "Seismology and earthquakes"
+                        },
+                        {
+                            "clue": "NTH RPL GYN DHMN S",
+                            "answer": "Anthropology and humans"
+                        }
+                    ]
+                },
+                {
+                    "category": "Movies with Chinese zodiac animals replaced by the next",
+                    "clues": [
+                        {
+                            "clue": "HWTT RNY RSNK",
+                            "answer": "How To Train Your Snake"
+                        },
+                        {
+                            "clue": "BBRTNTHCTY",
+                            "answer": "Babe: Rat in the City"
+                        },
+                        {
+                            "clue": "XT LL",
+                            "answer": "Oxatouille"
+                        },
+                        {
+                            "clue": "CRC HNGR BBTH DDNSNK",
+                            "answer": "Crouching Rabbit, Hidden Snake"
+                        }
+                    ]
+                },
+                {
+                    "category": "Composers",
+                    "clues": [
+                        {
+                            "clue": "JS PHHY DN",
+                            "answer": "Joseph Haydn"
+                        },
+                        {
+                            "clue": "PLMCC RTNY",
+                            "answer": "Paul McCartney"
+                        },
+                        {
+                            "clue": "FLCCS",
+                            "answer": "Flaccus"
+                        },
+                        {
+                            "clue": "HN SZM MR",
+                            "answer": "Hans Zimmer"
+                        }
+                    ]
                 }
             ]
         },
@@ -436,6 +536,92 @@
                     ],
                     "url": "https://puzzgrid.com/grid/64966"
                 }
+            ],
+            "missing_vowels": [
+                {
+                    "category": "Fictional drinks",
+                    "clues": [
+                        {
+                            "clue": "DFFBR",
+                            "answer": "Duff Beer"
+                        },
+                        {
+                            "clue": "PNG LCT CGRGLBL STR",
+                            "answer": "Pan-Galactic Gargle Blaster"
+                        },
+                        {
+                            "clue": "NKCL",
+                            "answer": "Nuka-Cola"
+                        },
+                        {
+                            "clue": "MBRS",
+                            "answer": "Ambrosia"
+                        }
+                    ]
+                },
+                {
+                    "category": "Plants with US states replaced with their capitals",
+                    "clues": [
+                        {
+                            "clue": "RCHM NDCR PR",
+                            "answer": "Richmond creeper"
+                        },
+                        {
+                            "clue": "TLL HSSTH TCHPLM",
+                            "answer": "Tallahassee thatch palm"
+                        },
+                        {
+                            "clue": "STNP RSMMN",
+                            "answer": "Austin persimmon"
+                        },
+                        {
+                            "clue": "SL MG RP",
+                            "answer": "Salem grape"
+                        }
+                    ]
+                },
+                {
+                    "category": "Quotes from Thanos",
+                    "clues": [
+                        {
+                            "clue": "PRFCT LYBL NCDSL LTHNG SSHLDB",
+                            "answer": "Perfectly Balanced, As All Things Should Be"
+                        },
+                        {
+                            "clue": "RLT YSFT NDSP PNTNG",
+                            "answer": "Reality Is Often Disappointing"
+                        },
+                        {
+                            "clue": "VRYT HNG",
+                            "answer": "Everything"
+                        },
+                        {
+                            "clue": "YSH LDHVG NFRT HHD",
+                            "answer": "You Should Have Gone For The Head"
+                        }
+                    ]
+                },
+                {
+                    "category": "Game shows with an antonym",
+                    "clues": [
+                        {
+                            "clue": "STR NGSTL NK",
+                            "answer": "Strongest Link"
+                        },
+                        {
+                            "clue": "THPR CSLF T",
+                            "answer": "The Price is Left"
+                        },
+                        {
+                            "clue": "P NTMR",
+                            "answer": "Pointmore"
+                        },
+                        {
+                            "clue": "RYDM BRTH NFFTHGR DR",
+                            "answer": "Are You Dumber Than A Fifthgrader?"
+                        }
+                    ]
+                }
             ]
         },
         {
@@ -645,6 +831,92 @@
                         }
                     ],
                     "url": "https://puzzgrid.com/grid/65260"
+                }
+            ],
+            "missing_vowels": [
+                {
+                    "category": "Colors and their complements",
+                    "clues": [
+                        {
+                            "clue": "GRNN DMGNT",
+                            "answer": "Green and Magenta"
+                        },
+                        {
+                            "clue": "VN LLNDX FR DBL",
+                            "answer": "Vanilla and Oxford Blue"
+                        },
+                        {
+                            "clue": "GGP LNTN DJTS TRM",
+                            "answer": "Eggplant and Jetstream"
+                        },
+                        {
+                            "clue": "CBLTGR YNDSPN SHGRY",
+                            "answer": "Cobalt Gray and Spanish Gray"
+                        }
+                    ]
+                },
+                {
+                    "category": "Units of speed",
+                    "clues": [
+                        {
+                            "clue": "KLM TRSP RHR",
+                            "answer": "Kilometres per Hour"
+                        },
+                        {
+                            "clue": "FR LNGSPR FR TNGHT",
+                            "answer": "Furlongs per Fortnight"
+                        },
+                        {
+                            "clue": "MCK YSPRJ FFY",
+                            "answer": "Mickeys per Jiffy"
+                        },
+                        {
+                            "clue": "TTPR SCSPRN NCNTRY",
+                            "answer": "Attoparsecs per Nanocentury"
+                        }
+                    ]
+                },
+                {
+                    "category": "What the animal kingdom is up to",
+                    "clues": [
+                        {
+                            "clue": "THH RSSRK CKNGTHB CKT",
+                            "answer": "The horses are kicking the bucket"
+                        },
+                        {
+                            "clue": "THV LTRSH VHNCH",
+                            "answer": "The vultures have a hunch"
+                        },
+                        {
+                            "clue": "THM NK YSRG NGP",
+                            "answer": "The monkeys are going ape"
+                        },
+                        {
+                            "clue": "THCH TH SNVRP RSPR",
+                            "answer": "The cheetahs never prosper"
+                        }
+                    ]
+                },
+                {
+                    "category": "Fictional modes of transport",
+                    "clues": [
+                        {
+                            "clue": "HG WR TSXP RSS",
+                            "answer": "Hogwarts Express"
+                        },
+                        {
+                            "clue": "ML LNNMF LCN",
+                            "answer": "Millennium Falcon"
+                        },
+                        {
+                            "clue": "HVRB RD",
+                            "answer": "Hoverboard"
+                        },
+                        {
+                            "clue": "TRD S",
+                            "answer": "TARDIS"
+                        }
+                    ]
                 }
             ]
         },
@@ -856,6 +1128,92 @@
                     ],
                     "url": "https://puzzgrid.com/grid/65391"
                 }
+            ],
+            "missing_vowels": [
+                {
+                    "category": "Episodes from “The Big Bang Theory”",
+                    "clues": [
+                        {
+                            "clue": "THB GBRNHY PTHSS",
+                            "answer": "The Big Bran Hypothesis"
+                        },
+                        {
+                            "clue": "THPNC KBTT RNMLY",
+                            "answer": "The Pancake Batter Anomaly"
+                        },
+                        {
+                            "clue": "THBR BR NSBL MTN",
+                            "answer": "The Barbarian Sublimation"
+                        },
+                        {
+                            "clue": "THD HSVDC KDFC NCY",
+                            "answer": "The Adhesive Duck Deficiency"
+                        }
+                    ]
+                },
+                {
+                    "category": "Laundry symbols and their meanings",
+                    "clues": [
+                        {
+                            "clue": "CR CLNDD RYC LNNLY",
+                            "answer": "Circle and dry clean only"
+                        },
+                        {
+                            "clue": "SQ RNDN TRLD RY",
+                            "answer": "Square and natural dry"
+                        },
+                        {
+                            "clue": "TRN GLN DBLC HNGL LWD",
+                            "answer": "Triangle and bleaching allowed"
+                        },
+                        {
+                            "clue": "RNN DRN NGLLW D",
+                            "answer": "Iron and ironing allowed"
+                        }
+                    ]
+                },
+                {
+                    "category": "What the animal kingdom is up to",
+                    "clues": [
+                        {
+                            "clue": "THS TRC HSRD WN TRTH",
+                            "answer": "The ostriches are down to earth"
+                        },
+                        {
+                            "clue": "THGRF F SRST CKN GTH RNCK ST",
+                            "answer": "The giraffes are sticking their necks out"
+                        },
+                        {
+                            "clue": "THR HNSRFL NGHR NY",
+                            "answer": "The rhinos are feeling horny"
+                        },
+                        {
+                            "clue": "THLP RD SRNB TFSP T",
+                            "answer": "The leopards are in a bit of a spot"
+                        }
+                    ]
+                },
+                {
+                    "category": "Politicians and their parties",
+                    "clues": [
+                        {
+                            "clue": "JB DNNDD MCR TCPR TY",
+                            "answer": "Joe Biden and Democratic Party"
+                        },
+                        {
+                            "clue": "XJ NPN GNDC HNSC MMN STP RTY",
+                            "answer": "Xi Jinping and Chinese Communist Party"
+                        },
+                        {
+                            "clue": "M MNLM CR NNDR NS SNC",
+                            "answer": "Emmanuel Macron and Renaissance"
+                        },
+                        {
+                            "clue": "VLD YMY RZLNS KYYN DSRV NTFT HPPL",
+                            "answer": "Volodymyr Zelenskyy and Servant of the People"
+                        }
+                    ]
+                }
             ]
         },
         {
@@ -1065,6 +1423,92 @@
                         }
                     ],
                     "url": "https://puzzgrid.com/grid/67063"
+                }
+            ],
+            "missing_vowels": [
+                {
+                    "category": "Song lyrics",
+                    "clues": [
+                        {
+                            "clue": "SP RCLF RGL STCX PLD CS",
+                            "answer": "Supercalifragilisticexpialidocious"
+                        },
+                        {
+                            "clue": "MB LD BDDB D",
+                            "answer": "I'm blue, da ba dee, da ba di"
+                        },
+                        {
+                            "clue": "HHH HTN GT NGWL LWLLB N GBNG",
+                            "answer": "Ooh ee ooh ah ah ting tang walla walla bing bang"
+                        },
+                        {
+                            "clue": "TST HSS NTBJ LLYFL LLLLLLL",
+                            "answer": "'Tis the season to be jolly, falalalala, lalalala"
+                        }
+                    ]
+                },
+                {
+                    "category": "Fictional characters with their middle names",
+                    "clues": [
+                        {
+                            "clue": "JM STB RSKR K",
+                            "answer": "James Tiberius Kirk"
+                        },
+                        {
+                            "clue": "D NLDF NT LR YDCK",
+                            "answer": "Donald Fauntleroy Duck"
+                        },
+                        {
+                            "clue": "PT RLW NB RGRF FN",
+                            "answer": "Peter Löwenbräu Griffin"
+                        },
+                        {
+                            "clue": "HR RYJM SPT TR",
+                            "answer": "Harry James Potter"
+                        }
+                    ]
+                },
+                {
+                    "category": "Computers and what they won",
+                    "clues": [
+                        {
+                            "clue": "D PBLN DCHS S",
+                            "answer": "Deep Blue and chess"
+                        },
+                        {
+                            "clue": "WT SNN DJP RDY",
+                            "answer": "Watson and Jeopardy"
+                        },
+                        {
+                            "clue": "DPM NDN DTRG MS",
+                            "answer": "DeepMind and Atari games"
+                        },
+                        {
+                            "clue": "LP HGN DG",
+                            "answer": "AlphaGo and Go"
+                        }
+                    ]
+                },
+                {
+                    "category": "Astute scientists",
+                    "clues": [
+                        {
+                            "clue": "BR LLN TBL GST",
+                            "answer": "Brilliant biologist"
+                        },
+                        {
+                            "clue": "CRF TYCH MST",
+                            "answer": "Crafty chemist"
+                        },
+                        {
+                            "clue": "FX YPH YSCS T",
+                            "answer": "Foxy physicist"
+                        },
+                        {
+                            "clue": "CNNN GL NGST",
+                            "answer": "Cunning linguist"
+                        }
+                    ]
                 }
             ]
         }

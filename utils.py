@@ -3,5 +3,3 @@ def indexof(lst, fnc):
 		if fnc(elem):
 			return i
 	return None
-
-#client.tree.remove_command('flip')

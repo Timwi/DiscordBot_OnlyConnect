@@ -10,10 +10,9 @@ import discord
 import config
 
 from discord.ext import commands
-from game import Game
 from discord import app_commands
 from PIL import Image, ImageOps, ImageDraw, ImageFont
-from genimg import gen_img, gen_wall, gen_score
+from genimg import gen_img, gen_wall, gen_score, gen_missing_vowels
 from utils import indexof
 
 f = io.open("data/data.json", mode="r", encoding="utf-8")
@@ -128,8 +127,8 @@ async def delteam(	interaction: discord.Interaction,
 	await interaction.response.send_message('Team **{}** has left the game: {}, score: {t.score}'.format(t.name, ", ".join(f'<@{p}>' for p in t.players)))
 
 #	  / ╓──┐┌─╥─┐╓──╖ ╥──╖┌─╥─┐
-#	 /  ╙──╖  ║  ╟──╢ ╟─┬╜  ║
-#	/   └──╜  ╨  ╨  ╨ ╨ └─  ╨
+#	 /  ╙──╖  ║  ╟──╢ ╟─╥╜  ║
+#	/   └──╜  ╨  ╨  ╨ ╨ ╙─  ╨
 @client.tree.command(name='start', description='select teams for the next game (team 1 goes first)')
 @app_commands.choices(team1=[app_commands.Choice(name=team['name'], value=i) for i, team in enumerate(game['teams'])])
 @app_commands.choices(team2=[app_commands.Choice(name=team['name'], value=i) for i, team in enumerate(game['teams'])])
@@ -173,8 +172,8 @@ async def score(interaction: discord.Interaction):
 	await interaction.response.send_message(teams_str)
 
 #	  / ╓──┐ ╓──┐ ╓──╖ ╥──╖ ╥──┐
-#	 /  ╙──╖ ║    ║  ║ ╟─┬╜ ╟─┤
-#	/   └──╜ ╙──┘ ╙──╜ ╨ └─ ╨──┘
+#	 /  ╙──╖ ║    ║  ║ ╟─╥╜ ╟─┤
+#	/   └──╜ ╙──┘ ╙──╜ ╨ ╙─ ╨──┘
 @client.tree.command(name='score', description='Display the current score')
 async def score(interaction: discord.Interaction):
 	global game
@@ -187,7 +186,7 @@ async def score(interaction: discord.Interaction):
 
 	await interaction.response.send_message(
 		file=discord.File(gen_score(
-			[game['teams'][game['ongoing']['teams'][ix]].name for ix in range(2)],
+			[game['teams'][game['ongoing']['teams'][ix]]['name'] for ix in range(2)],
 			game['ongoing']['scores']),
 		filename="scores.png"))
 
@@ -257,15 +256,15 @@ async def play(interaction: discord.Interaction):
 		await interaction.response.send_message(f'Launching {"Sequences" if isSeq else "Connections"} for team **{team["name"]}**.', ephemeral=True)
 
 		# select an Egyptian hieroglyph
-		parent_view = discord.ui.View(timeout=None)
+		vw = discord.ui.View(timeout=None)
 		btn_ids = []
 		for i in range(6):
 			btn_id = str(uuid.uuid4())
 			btn_ids.append(btn_id)
-			parent_view.add_item(discord.ui.Button(
+			vw.add_item(discord.ui.Button(
 				label=hieroglyphs[i], custom_id=btn_id, disabled=i in game['ongoing']['used'],
 				row=(i // 3), style=discord.ButtonStyle.primary))
-		msg = await interaction.channel.send(f'{mentions}\n**{team["name"]}**, select an Egyptian hieroglyph.', view=parent_view)
+		msg = await interaction.channel.send(f'{mentions}\n**{team["name"]}**, select an Egyptian hieroglyph.', view=vw)
 		btn_click: discord.Interaction = await client.wait_for('interaction', check=lambda e: e.data.get('custom_id') in btn_ids and e.user.id in team['players'], timeout=None)
 		selection = btn_ids.index(btn_click.data['custom_id'])
 		await btn_click.edit_message(content=f'**{team["name"]}** selected __{hieroglyphs[selection]}__. **Get ready!**', view=None)
@@ -413,15 +412,15 @@ async def play(interaction: discord.Interaction):
 		await interaction.response.send_message(f'Launching Connecting Wall for team **{team["name"]}**.', ephemeral=True)
 
 		# select an Egyptian hieroglyph
-		parent_view = discord.ui.View(timeout=None)
+		vw = discord.ui.View(timeout=None)
 		btn_ids = []
 		for i in range(2):
 			btn_id = str(uuid.uuid4())
 			btn_ids.append(btn_id)
-			parent_view.add_item(discord.ui.Button(
+			vw.add_item(discord.ui.Button(
 				label=wall_hieroglyphs[i], custom_id=btn_id, disabled=i in game['ongoing']['used'],
 				row=0, style=discord.ButtonStyle.primary))
-		msg = await interaction.channel.send(f'{mentions}\n**{team["name"]}**, select an Egyptian hieroglyph.', view=parent_view)
+		msg = await interaction.channel.send(f'{mentions}\n**{team["name"]}**, select an Egyptian hieroglyph.', view=vw)
 		btn_click: discord.Interaction = await client.wait_for('interaction', check=lambda e: e.data.get('custom_id') in btn_ids and e.user.id in team['players'], timeout=None)
 		selection = btn_ids.index(btn_click.data['custom_id'])
 		await btn_click.response.edit_message(f'**{team["name"]}** selected **{wall_hieroglyphs[selection]}**!', view=None)
@@ -442,16 +441,16 @@ async def play(interaction: discord.Interaction):
 		except discord.HTTPException:
 			pass
 
-		# allow host to select number of points
-		parent_view = discord.ui.View(timeout=None)
+		# Allow host to select number of points
+		vw = discord.ui.View(timeout=None)
 		points = [0, 1, 2, 3, 4, 5, 6, 7, 10]
 		btn_ids = []
 		for pts in points:
 			btn_id = str(uuid.uuid4())
 			btn_ids.append(btn_id)
-			parent_view.add_item(discord.ui.Button(
+			vw.add_item(discord.ui.Button(
 				label=str(pts), custom_id=btn_id, style=discord.ButtonStyle.primary))
-		msg = await interaction.channel.send('Number of points earned:', view=parent_view)
+		msg = await interaction.channel.send('Number of points earned:', view=vw)
 		btn_click = await client.wait_for('interaction', check=lambda e: e.data.get('custom_id') in btn_ids and e.user.id in config.admins, timeout=None)
 		num_points = points[btn_ids.index(btn_click.data['custom_id'])]
 		game['ongoing']['scores'][game['ongoing']['up']] += num_points
@@ -462,7 +461,8 @@ async def play(interaction: discord.Interaction):
 		game['ongoing']['used'].append(selection)
 		if len(game['ongoing']['used']) == 2:
 			game['ongoing']['round'] = 3
-			game['ongoing']['used'] = []
+			game['ongoing']['category'] = 0
+			del game['ongoing']['used']
 			del game['ongoing']['up']
 		save_game()
 
@@ -470,50 +470,86 @@ async def play(interaction: discord.Interaction):
 	# MISSING VOWELS (round 4)
 
 	else:
-		await interaction.response.send_message('Not implemented.', ephemeral=True)
+		guild	= client.get_guild(config.guild_id)
+		players1	= game['teams'][game['ongoing']['teams'][0]]['players']
+		players2	= game['teams'][game['ongoing']['teams'][1]]['players']
+		players	= [*players1, *players2]
 
+		await interaction.response.send_message('Launching Missing Vowels round.', ephemeral=True)
 
-async def play_missing_vowels(players):
-	mentions = ', '.join(player.mention for player in players)
-	ids = {player.id for player in players}
-	for round_number in range(4):
-		task = game['use_task']('missing_vowels', round_number)
-		parent_view = discord.ui.View(timeout=None)
-		buzzer_id = str(uuid.uuid4())
-		parent_view.add_item(discord.ui.Button(emoji='🔔', custom_id=buzzer_id, style=discord.ButtonStyle.red))
-		embed = discord.Embed(title=f'missing vowels', description=task[0], colour=0x5865f2)
-		msg = await interaction.channel.send(mentions, embed=embed, view=parent_view)
-		buzz_msg = None
-		for word_number in range(5):
-			btn_click: discord.Interaction = await client.wait_for('interaction', check=lambda e: e.data.get('custom_id') == buzzer_id and e.user.id in config.admins, timeout=None)
-			await btn_click.response.defer()
-			if buzz_msg:
-				await buzz_msg.delete()
-			if word_number > 0:
-				embed = discord.Embed(title=msg.embeds[0].title, description=msg.embeds[0].description)
-				for field in msg.embeds[0].fields[:-1]:
-					embed.add_field(name=field.name, value=field.value, inline=False)
-				embed.add_field(name=task[-1 + word_number * 2], value=task[word_number * 2], inline=False)
-				await msg.edit(embed=embed)
-				await asyncio.sleep(5)
-			if word_number == 4:
-				break
-			msg.embeds[0].add_field(name=task[1 + word_number * 2], value='\u200b', inline=False)
-			await msg.edit(embed=msg.embeds[0])
-			try:
-				btn_click: discord.Interaction = await client.wait_for('interaction', check=lambda e: e.data.get('custom_id') == buzzer_id and e.user.id in ids, timeout=10)
-				await btn_click.response.defer()
-				if btn_click.user in game['team_1_players']:
-					team_name = game['team_1_name']
-					team_mentions = ', '.join(player.mention for player in game['team_1_players'])
-				elif btn_click.user in game['team_2_players']:
-					team_name = game['team_2_name']
-					team_mentions = ', '.join(player.mention for player in game['team_2_players'])
-				else:
-					team_name = team_mentions = '???'
-				buzz_msg = await msg.reply(f'{team_mentions} — :bellhop: {team_name} buzzed')
-			except asyncio.exceptions.TimeoutError:
-				buzz_msg = await msg.reply(f'Nobody buzzed in time.')
+		for round_ix, round in enumerate(game['batches'][game['ongoing']['batch']]['missing_vowels']):
+			if round_ix < game['ongoing']['category']:
+				continue
+
+			vw = discord.ui.View(timeout=None)
+
+			buzzer_id = str(uuid.uuid4())
+			correct_id = str(uuid.uuid4())
+			wrong_id = str(uuid.uuid4())
+
+			vw.add_item(discord.ui.Button(emoji='🔔', custom_id=buzzer_id, style=discord.ButtonStyle.red))
+			vw.add_item(discord.ui.Button(label='✓', custom_id=correct_id))
+			vw.add_item(discord.ui.Button(label='✗', custom_id=wrong_id))
+
+			embed = discord.Embed(title='Round 4: Missing Vowels', description='-', colour=0x5865f2)
+			embed.set_image(url='attachment://mv.png')
+			file = discord.File(gen_missing_vowels(round['category'], []), filename='mv.png')
+			await interaction.channel.send(embed=embed, files=[file], view=vw)
+
+			qs = []
+
+			for q in round['clues']:
+				# Wait for host to press buzzer to show next clue
+				btn_click = await client.wait_for('interaction',
+					check=lambda e: e.data.get('custom_id') == buzzer_id and e.user.id in config.admins, timeout=None)
+
+				# Display clue
+				qs.append(q['clue'])
+				file = discord.File(gen_missing_vowels(round['category'], qs), filename='mv.png')
+				await btn_click.response.edit_message(embed=embed, attachments=[file], view=vw)
+
+				# Wait for someone to buzz or host to press ✗
+				btn_click = await client.wait_for('interaction',
+					check=lambda e: (e.data.get('custom_id') == buzzer_id and e.user.id in players) or (e.data.get('custom_id') == wrong_id and e.user.id in config.admins), timeout=None)
+
+				if btn_click.data['custom_id'] == buzzer_id:
+
+					team_ix = 0 if btn_click.user.id in players1 else 1
+					embed.description = f'BUZZED: {game["teams"][team_ix]["name"]}'
+					await btn_click.response.edit_message(embed=embed)
+
+					# Wait for host to press ✓ or ✗
+					btn_click = await client.wait_for('interaction',
+						check=lambda e: e.data.get('custom_id') in [correct_id, wrong_id] and e.user.id in config.admins, timeout=None)
+
+					if btn_click.data['custom_id'] == correct_id:
+						game['ongoing']['scores'][team_ix] += 1
+						save_game()
+					else:
+						game['ongoing']['scores'][team_ix] -= 1
+						save_game()
+
+						# throw it to the other team for a bonus
+						team_ix = team_ix ^ 1
+						embed.description = f'Bonus: {game["teams"][team_ix]["name"]}'
+						await btn_click.response.edit_message(embed=embed)
+						btn_click = await client.wait_for('interaction',
+							check=lambda e: e.data.get('custom_id') in [correct_id, wrong_id] and e.user.id in config.admins, timeout=None)
+
+						if btn_click.data['custom_id'] == correct_id:
+							game['ongoing']['scores'][team_ix] += 1
+							save_game()
+
+					embed.description = '-'
+
+				# Show answer
+				qs[-1] = q['answer']
+				file = discord.File(gen_missing_vowels(round['category'], qs), filename='mv.png')
+				await btn_click.response.edit_message(embed=embed, attachments=[file], view=vw)
+
+			game['ongoing']['category'] += 1
+			save_game()
+
 
 if __name__ == '__main__':
 	client.run(config.bot_token)

@@ -14,6 +14,8 @@ wall_colors	= list(map(lambda n: Image.open(os.path.join('res', f'wall_{n}.png')
 score_bar_1	= Image.open(os.path.join('res', 'score_1.png'))
 score_bar_2	= Image.open(os.path.join('res', 'score_2.png'))
 score_box	= Image.open(os.path.join('res', 'score.png'))
+mv_category_bar	= Image.open(os.path.join('res', 'mvcat.png'))
+mv_question_bar	= Image.open(os.path.join('res', 'mvq.png'))
 
 def is_font_too_large(fs, texts, maxw, maxh):
 	font = default_font if fs == default_font_size else ImageFont.truetype(default_font_path, fs)
@@ -42,6 +44,14 @@ def find_font_size(texts, maxw, maxh, start_size=default_font_size):
 				fh = fh2
 	return font, fh
 
+
+#   ╓──┐ ╓──╖ ╥┐ ╥ ╥┐ ╥ ╥──┐ ╓──┐┌─╥─┐╥ ╓──╖ ╥┐ ╥ ╓──┐     ╥
+#   ║    ║  ║ ║└┐║ ║└┐║ ╟─┤  ║     ║  ║ ║  ║ ║└┐║ ╙──╖   ──╫──
+#   ╙──┘ ╙──╜ ╨ └╨ ╨ └╨ ╨──┘ ╙──┘  ╨  ╨ ╙──╜ ╨ └╨ └──╜     ╨
+#   ╓──┐ ╥──┐ ╓──╖ ╥  ╥ ╥──┐ ╥┐ ╥ ╓──┐ ╥──┐ ╓──┐
+#   ╙──╖ ╟─┤  ║  ║ ║  ║ ╟─┤  ║└┐║ ║    ╟─┤  ╙──╖
+#   └──╜ ╨──┘ ╙─┼╜ ╙──╜ ╨──┘ ╨ └╨ ╙──┘ ╨──┘ └──╜
+#
 # stage:
 # • 0 = first clue shown, timer shows 5 points
 # • 1 = 2 clues shown, timer shows 3 points
@@ -148,6 +158,10 @@ def gen_img(q, stage, filename=None):
 	return image_file
 
 
+
+#   ╓──┐ ╓──╖ ╥┐ ╥ ╥┐ ╥ ╥──┐ ╓──┐┌─╥─┐╥ ╥┐ ╥ ╓──┐    ╥  ╥ ╓──╖ ╥   ╥   ╓──┐
+#   ║    ║  ║ ║└┐║ ║└┐║ ╟─┤  ║     ║  ║ ║└┐║ ║ ─╖    ║┌┐║ ╟──╢ ║   ║   ╙──╖
+#   ╙──┘ ╙──╜ ╨ └╨ ╨ └╨ ╨──┘ ╙──┘  ╨  ╨ ╨ └╨ ╙──╜    ╙┘└╜ ╨  ╨ ╨──┘╨──┘└──╜
 def gen_wall(clues, num_done, selections, filename=None):
 
 	pad = 12	# padding between buttons
@@ -196,6 +210,42 @@ def gen_wall(clues, num_done, selections, filename=None):
 	return image_file
 
 
+#   ╥┐┌╥ ╥ ╓──┐ ╓──┐ ╥ ╥┐ ╥ ╓──┐   ╥  ╥ ╓──╖ ╥  ╥ ╥──┐ ╥   ╓──┐
+#   ║└┘║ ║ ╙──╖ ╙──╖ ║ ║└┐║ ║ ─╖   ╙╖╓╜ ║  ║ ║┌┐║ ╟─┤  ║   ╙──╖
+#   ╨  ╨ ╨ └──╜ └──╜ ╨ ╨ └╨ ╙──╜    ╙╜  ╙──╜ ╙┘└╜ ╨──┘ ╨──┘└──╜
+def gen_missing_vowels(category, strings, filename=None):
+	pad = 12	# padding between elements
+	w = 1449	# width of each bar
+	ch = 68	# height of a category bar
+	qh = 119	# height of a clue/answer bar
+	tw = w + 2*pad	# total width of the output bitmap
+	th = 2*pad + len(strings)*(qh + pad) + ch	# total height of the output bitmap
+	fo = 7	# adjustment by which text is moved down to make it look vertically centered
+
+	res = Image.new('RGB', (tw, th), (47, 49, 54))
+	draw = ImageDraw.Draw(res)
+
+	res.paste(mv_category_bar, (pad, pad), mv_category_bar)
+	(font, fh) = find_font_size([category], w - 48, ch - 12)
+	l = font.getlength(category)
+	draw.text((pad + w//2 - l//2 + 2, pad + ch//2 - fh//2 + 7 + 2), category, font=font, fill=(0, 0, 0))
+	draw.text((pad + w//2 - l//2, pad + ch//2 - fh//2 + 7), category, font=font, fill=(249, 254, 255))
+
+	for i, q in enumerate(strings):
+		res.paste(mv_question_bar, (pad, 2*pad + ch + (qh + pad)*i), mv_question_bar)
+		(font, fh) = find_font_size([q], w - 48, qh - 12, start_size=128)
+		l = font.getlength(q)
+		draw.text((pad + w//2 - l//2, 2*pad + ch + (qh + pad)*i + qh//2 - fh//2 + 18), q, font=font, fill=(5, 47, 85))
+
+	image_file = open(filename, "wb") if filename is not None else io.BytesIO()
+	res.save(image_file, 'PNG')
+	image_file.seek(0)
+	return image_file
+
+
+#   ╓──┐ ╓──┐ ╓──╖ ╥──╖ ╥──┐ ╓──┐
+#   ╙──╖ ║    ║  ║ ╟─╥╜ ╟─┤  ╙──╖
+#   └──╜ ╙──┘ ╙──╜ ╨ ╙─ ╨──┘ └──╜
 def gen_score(teams, scores, filename=None):
 	pad = 12	# padding between elements
 	w = 1183	# width of a team name bar
@@ -217,8 +267,9 @@ def gen_score(teams, scores, filename=None):
 
 		(font, fh) = find_font_size([team_name], mw, mh, start_size=128)
 		fo1 = fo*fh/149
-		draw.text((pad + 24 + 2, pad + 6 + fo1 + y + h//2 - fh//2 + 2), team_name, font=font, fill=(0, 0, 0))
-		draw.text((pad + 24, pad + 6 + fo1 + y + h//2 - fh//2), team_name, font=font, fill=(249, 254, 255))
+		l = font.getlength(team_name)
+		draw.text((pad + w//2 - l//2 + 2, pad + 6 + fo1 + y + h//2 - fh//2 + 2), team_name, font=font, fill=(0, 0, 0))
+		draw.text((pad + w//2 - l//2, pad + 6 + fo1 + y + h//2 - fh//2), team_name, font=font, fill=(249, 254, 255))
 
 		(font, fh) = find_font_size([score], msw, mh, start_size=128)
 		fo1 = fo*fh/149
@@ -232,4 +283,5 @@ def gen_score(teams, scores, filename=None):
 	res.save(image_file, 'PNG')
 	image_file.seek(0)
 	return image_file
+
 
