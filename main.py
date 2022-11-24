@@ -119,7 +119,7 @@ async def delteam(	interaction: discord.Interaction,
 		await interaction.response.send_message('You are not hosting!', ephemeral=True)
 		return
 	if index < 0 or index >= len(game['teams']):
-		await interaction.response.send_message('Invalid team index.')
+		await interaction.response.send_message('Invalid team index.', ephemeral=True)
 		return
 	t = game['teams'][index]
 	del game['teams'][index]
