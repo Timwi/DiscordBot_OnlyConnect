@@ -11,11 +11,11 @@ question_mark_button	= Image.open(os.path.join('res', 'qq.png'))
 answer_bar	= Image.open(os.path.join('res', 'answer.png'))
 timer_bar	= Image.open(os.path.join('res', 'timer.png'))
 wall_colors	= list(map(lambda n: Image.open(os.path.join('res', f'wall_{n}.png')), [1, 2, 3, 4]))
+mv_category_bar	= Image.open(os.path.join('res', 'mvcat.png'))
+mv_question_bar	= Image.open(os.path.join('res', 'mvq.png'))
 score_bar_1	= Image.open(os.path.join('res', 'score_1.png'))
 score_bar_2	= Image.open(os.path.join('res', 'score_2.png'))
 score_box	= Image.open(os.path.join('res', 'score.png'))
-mv_category_bar	= Image.open(os.path.join('res', 'mvcat.png'))
-mv_question_bar	= Image.open(os.path.join('res', 'mvq.png'))
 
 def is_font_too_large(fs, texts, maxw, maxh):
 	font = default_font if fs == default_font_size else ImageFont.truetype(default_font_path, fs)
@@ -45,12 +45,9 @@ def find_font_size(texts, maxw, maxh, start_size=default_font_size):
 	return font, fh
 
 
-#   ╓──┐ ╓──╖ ╥┐ ╥ ╥┐ ╥ ╥──┐ ╓──┐┌─╥─┐╥ ╓──╖ ╥┐ ╥ ╓──┐     ╥
-#   ║    ║  ║ ║└┐║ ║└┐║ ╟─┤  ║     ║  ║ ║  ║ ║└┐║ ╙──╖   ──╫──
-#   ╙──┘ ╙──╜ ╨ └╨ ╨ └╨ ╨──┘ ╙──┘  ╨  ╨ ╙──╜ ╨ └╨ └──╜     ╨
-#   ╓──┐ ╥──┐ ╓──╖ ╥  ╥ ╥──┐ ╥┐ ╥ ╓──┐ ╥──┐ ╓──┐
-#   ╙──╖ ╟─┤  ║  ║ ║  ║ ╟─┤  ║└┐║ ║    ╟─┤  ╙──╖
-#   └──╜ ╨──┘ ╙─┼╜ ╙──╜ ╨──┘ ╨ └╨ ╙──┘ ╨──┘ └──╜
+#   ╓──┐ ╓──╖ ╥┐ ╥ ╥┐ ╥ ╥──┐ ╓──┐┌─╥─┐╥ ╓──╖ ╥┐ ╥ ╓──┐              ╥    ╓──┐ ╥──┐ ╓──╖ ╥  ╥ ╥──┐ ╥┐ ╥ ╓──┐ ╥──┐ ╓──┐
+#   ║    ║  ║ ║└┐║ ║└┐║ ╟─┤  ║     ║  ║ ║  ║ ║└┐║ ╙──╖    ╓─╖ ╥─╖ ╓─╢    ╙──╖ ╟─┤  ║  ║ ║  ║ ╟─┤  ║└┐║ ║    ╟─┤  ╙──╖
+#   ╙──┘ ╙──╜ ╨ └╨ ╨ └╨ ╨──┘ ╙──┘  ╨  ╨ ╙──╜ ╨ └╨ └──╜    ╙─╨ ╨ ╙ ╙─╨    └──╜ ╨──┘ ╙─┼╜ ╙──╜ ╨──┘ ╨ └╨ ╙──┘ ╨──┘ └──╜
 #
 # stage:
 # • 0 = first clue shown, timer shows 5 points
@@ -210,9 +207,9 @@ def gen_wall(clues, num_done, selections, filename=None):
 	return image_file
 
 
-#   ╥┐┌╥ ╥ ╓──┐ ╓──┐ ╥ ╥┐ ╥ ╓──┐   ╥  ╥ ╓──╖ ╥  ╥ ╥──┐ ╥   ╓──┐
-#   ║└┘║ ║ ╙──╖ ╙──╖ ║ ║└┐║ ║ ─╖   ╙╖╓╜ ║  ║ ║┌┐║ ╟─┤  ║   ╙──╖
-#   ╨  ╨ ╨ └──╜ └──╜ ╨ ╨ └╨ ╙──╜    ╙╜  ╙──╜ ╙┘└╜ ╨──┘ ╨──┘└──╜
+#   ╥┐┌╥ ╥ ╓──┐ ╓──┐ ╥ ╥┐ ╥ ╓──┐    ╥  ╥ ╓──╖ ╥  ╥ ╥──┐ ╥   ╓──┐
+#   ║└┘║ ║ ╙──╖ ╙──╖ ║ ║└┐║ ║ ─╖    ╙╖╓╜ ║  ║ ║┌┐║ ╟─┤  ║   ╙──╖
+#   ╨  ╨ ╨ └──╜ └──╜ ╨ ╨ └╨ ╙──╜     ╙╜  ╙──╜ ╙┘└╜ ╨──┘ ╨──┘└──╜
 def gen_missing_vowels(category, strings, filename=None):
 	pad = 12	# padding between elements
 	w = 1449	# width of each bar
@@ -278,6 +275,49 @@ def gen_score(teams, scores, filename=None):
 
 	dodraw(score_bar_1, teams[0], str(scores[0]), 0)
 	dodraw(score_bar_2, teams[1], str(scores[1]), pad+h)
+
+	image_file = open(filename, "wb") if filename is not None else io.BytesIO()
+	res.save(image_file, 'PNG')
+	image_file.seek(0)
+	return image_file
+
+
+#   ╥──┐╥  ╥ ╥   ╥       ╓──┐ ╓──┐ ╓──╖ ╥──╖ ╥──┐ ╓──┐
+#   ╟─┤ ║  ║ ║   ║       ╙──╖ ║    ║  ║ ╟─╥╜ ╟─┤  ╙──╖
+#   ╨   ╙──╜ ╨──┘╨──┘    └──╜ ╙──┘ ╙──╜ ╨ ╙─ ╨──┘ └──╜
+def gen_scores(teams, filename=None):
+	pad = 12	# padding between elements
+	w = 1183	# width of a team name bar
+	sw = 281	# width of the score box
+	h = 187	# height of either
+	mw = w - 48	# maximum width of the team name text
+	msw = sw - 48	# maximum width of the score text
+	mh = h - 12	# maximum height of the text
+	fo = 20	# adjustment by which text is moved down to make it look vertically centered
+	tw = w + 3*pad + sw	# total width of the output bitmap
+	th = len(teams)*h + (len(teams)+1)*pad	# total height of the output bitmap
+
+	res = Image.new('RGB', (tw, th), (54, 57, 63))
+	draw = ImageDraw.Draw(res)
+
+	def dodraw(score_bar, team_name, score, y):
+		res.paste(score_bar, (pad, pad + y), score_bar)
+		res.paste(score_box, (2*pad + w, pad + y), score_box)
+
+		(font, fh) = find_font_size([team_name], mw, mh, start_size=128)
+		fo1 = fo*fh/149
+		l = font.getlength(team_name)
+		draw.text((pad + w//2 - l//2 + 2, pad + 6 + fo1 + y + h//2 - fh//2 + 2), team_name, font=font, fill=(0, 0, 0))
+		draw.text((pad + w//2 - l//2, pad + 6 + fo1 + y + h//2 - fh//2), team_name, font=font, fill=(249, 254, 255))
+
+		(font, fh) = find_font_size([score], msw, mh, start_size=128)
+		fo1 = fo*fh/149
+		l = font.getlength(score)
+		draw.text((2*pad + w + sw//2 - l//2, pad + 6 + fo1 + y + h//2 - fh//2), score, font=font, fill=(5, 47, 85))
+
+	order = [*sorted(range(len(teams)), key=lambda x: -teams[x]['score'])]
+	for i in range(len(teams)):
+		dodraw(score_bar_1 if i % 2 == 0 else score_bar_2, teams[order[i]]['name'], str(teams[order[i]]['score']), (pad+h) * i)
 
 	image_file = open(filename, "wb") if filename is not None else io.BytesIO()
 	res.save(image_file, 'PNG')

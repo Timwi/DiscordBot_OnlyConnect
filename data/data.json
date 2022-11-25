@@ -15,21 +15,33 @@
             "score": 0
         }
     ],
-    "ongoing": {
-        "round": 3,
-        "teams": [
-            0,
-            1
-        ],
-        "scores": [
-            1,
-            2
-        ],
-        "batch": 0,
-        "category": 4
-    },
-    "batches_used": [
-        0
+    "ongoing": None,
+    "batches_used": [],
+    "tie_breakers_used": [
+        0,
+        1
+    ],
+    "tie_breakers": [
+        {
+            "clue": "LST HBT TLW NTHWR",
+            "answer": "Lose the battle, win the war"
+        },
+        {
+            "clue": "PNN YSV DSPN NYRN D",
+            "answer": "A penny saved is a penny earned"
+        },
+        {
+            "clue": "SYC MSYG",
+            "answer": "Easy come, easy go"
+        },
+        {
+            "clue": "GDB YC RLWR LD",
+            "answer": "Goodbye, cruel world"
+        },
+        {
+            "clue": "THRSN SCHT HN GSF RLN CH",
+            "answer": "There is no such thing as (a) free lunch"
+        }
     ],
     "batches": [
         {
@@ -117,14 +129,14 @@
                     "notes": ""
                 },
                 {
-                    "answer": "One, Two, Buckle My Shoe",
+                    "answer": "Martin Luther King Jr’s dreams",
                     "clues": [
-                        "image:SeqB1.jpg",
-                        "image:SeqB2.jpg",
-                        "image:SeqB3.jpg",
-                        "image:SeqB4.jpg"
+                        "... all men\nare created\nequal.",
+                        "... at the\ntable of\nbrotherhood.",
+                        "... an oasis of\nfreedom and\njustice.",
+                        "... the content\nof their\ncharacter."
                     ],
-                    "notes": "One, two, buckle my shoe\nThree, four, knock at the door\nFive, six, pick up sticks\nSeven, eight, lay them straight"
+                    "notes": ""
                 },
                 {
                     "answer": "Bingo, Bing, Bin, Bi",
@@ -729,12 +741,12 @@
                     "notes": "Index\nMiddle\nRing\nPinky"
                 },
                 {
-                    "answer": "Number of bordering countries",
+                    "answer": "Zodiac signs (fish, ram, bull, twins)",
                     "clues": [
-                        "3:\nNorth Korea",
-                        "2:\nUnited States",
-                        "1:\nHaiti",
-                        "0: (e.g.)\nAustralia"
+                        "(e.g.)\nPixar’s Nemo or\nDisney’s Flounder",
+                        "(e.g.) Volatile\ncomputer storage",
+                        "(e.g.) Sitting ___,\npit___, Red ___",
+                        "(e.g.) Identical ___\nor conjoined ___"
                     ],
                     "notes": ""
                 },
@@ -995,14 +1007,14 @@
                     "notes": "Light\nFeather\nBantam\nFly"
                 },
                 {
-                    "answer": "Martin Luther King Jr’s dreams",
+                    "answer": "NATO alphabet B, C, D, E",
                     "clues": [
-                        "... all men\nare created\nequal.",
-                        "... at the\ntable of\nbrotherhood.",
-                        "... an oasis of\nfreedom and\njustice.",
-                        "... the content\nof their\ncharacter."
+                        "image:SeqL1.jpg",
+                        "image:SeqL2.jpg",
+                        "image:SeqL3.jpg",
+                        "image:SeqL4.png"
                     ],
-                    "notes": ""
+                    "notes": "Bravo, Charlie, Delta, Echo"
                 },
                 {
                     "answer": "Movies with ever-fewer M’s",
@@ -1054,7 +1066,7 @@
                                 "Pitfall",
                                 "Battlestars",
                                 "Malcolm",
-                                "Lucky Numbers"
+                                "Lucky\nNumbers"
                             ]
                         },
                         {
@@ -1368,7 +1380,7 @@
                                 "Tyson",
                                 "Creed",
                                 "Warrior",
-                                "The Main Event"
+                                "The Main\nEvent"
                             ]
                         },
                         {
@@ -1486,6 +1498,302 @@
                         {
                             "clue": "LP HGN DG",
                             "answer": "AlphaGo and Go"
+                        }
+                    ]
+                },
+                {
+                    "category": "Astute scientists",
+                    "clues": [
+                        {
+                            "clue": "BR LLN TBL GST",
+                            "answer": "Brilliant biologist"
+                        },
+                        {
+                            "clue": "CRF TYCH MST",
+                            "answer": "Crafty chemist"
+                        },
+                        {
+                            "clue": "FX YPH YSCS T",
+                            "answer": "Foxy physicist"
+                        },
+                        {
+                            "clue": "CNNN GL NGST",
+                            "answer": "Cunning linguist"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "connections": [
+                {
+                    "answer": "Synonymized pangrams",
+                    "clues": [
+                        "A pair of goaded\nathletes assist\nin sending my\ntrivia game.",
+                        "Bundle my crate\nincluding 60\nbooze pitchers.",
+                        "Riddler of ebony\ncrystal, adjudicate\nthis pledge of\nmine.",
+                        "The swift\nchestnut vulpine\nleaps across the\nlethargic canine."
+                    ],
+                    "notes": "Two driven jocks help fax my quiz.\nPack my box with five dozen liquor jugs.\nSphinx of black quartz, judge my vow.\nThe quick brown fox jumps over the lazy dog."
+                },
+                {
+                    "answer": "Landmarks in Olympic fonts",
+                    "clues": [
+                        "image:ConL1.png",
+                        "image:ConL2.png",
+                        "image:ConL3.png",
+                        "image:ConL4.png"
+                    ],
+                    "notes": "Japan 2020, Paris 2024, Rio 2016, London 2012"
+                },
+                {
+                    "answer": "Haribo products",
+                    "clues": [
+                        "image:ConM1.jpg",
+                        "image:ConM2.jpg",
+                        "image:ConM3.jpg",
+                        "image:ConM4.jpg"
+                    ],
+                    "notes": "Dinosaurs, Watermelons, Smurfs, Gold Bears"
+                },
+                {
+                    "answer": "Mario Kart items",
+                    "clues": [
+                        "Mushroom",
+                        "Lightning",
+                        "Bullet Bill",
+                        "Blue Shell"
+                    ],
+                    "notes": ""
+                },
+                {
+                    "answer": "South Park characters’ first names",
+                    "clues": [
+                        "K. MacLachlan",
+                        "E. André",
+                        "K. Rogers",
+                        "S. Lee"
+                    ],
+                    "notes": "Kyle, Eric, Kenny, Stan"
+                },
+                {
+                    "answer": "F1",
+                    "clues": [
+                        "Pirelli",
+                        "Help",
+                        "White white\nbishop",
+                        "Unlucky day\n(first letter,\nfirst digit)"
+                    ],
+                    "notes": ""
+                }
+            ],
+            "sequences": [
+                {
+                    "answer": "Popes Benedict XIII–XVI",
+                    "clues": [
+                        "image:SeqK1.jpg",
+                        "image:SeqK2.jpg",
+                        "image:SeqK3.jpg",
+                        "image:SeqK4.jpg"
+                    ],
+                    "notes": "XIII: Orsini\nXIV: Lambertini\nXV: della Chiesa\nXVI: Ratzinger"
+                },
+                {
+                    "answer": "Successive US presidents’ children",
+                    "clues": [
+                        "Barbara &\nJenna",
+                        "Malia &\nSasha",
+                        "Tiffany,\nBarron, etc.",
+                        "Hunter,\nBeau, etc."
+                    ],
+                    "notes": "Children of: George W. Bush, Barack Obama, Donald Trump, Joe Biden"
+                },
+                {
+                    "answer": "Final Fantasy 4, 5, 6, 7",
+                    "clues": [
+                        "4:\nCecil Harvey",
+                        "5:\nFaris Scherwiz",
+                        "6:\nTerra Branford",
+                        "7: (e.g.)\nCloud Strife"
+                    ],
+                    "notes": ""
+                },
+                {
+                    "answer": "One, Two, Buckle My Shoe",
+                    "clues": [
+                        "image:SeqB1.jpg",
+                        "image:SeqB2.jpg",
+                        "image:SeqB3.jpg",
+                        "image:SeqB4.jpg"
+                    ],
+                    "notes": "One, two, buckle my shoe\nThree, four, knock at the door\nFive, six, pick up sticks\nSeven, eight, lay them straight"
+                },
+                {
+                    "answer": "Billboard Year-End Hot 100 top singles, 2020–17",
+                    "clues": [
+                        "I can’t sleep\nuntil I feel\nyour touch",
+                        "I’m gonna ride\n’til I can’t\nno more",
+                        "She say, do you\nlove me? I tell\nher, only partly",
+                        "(e.g.) We push\nand pull like\na magnet do"
+                    ],
+                    "notes": "The Weeknd — Blinding Lights\nLil Nas X — Old Town Road\nDrake — God’s Plan\nEd Sheeran — Shape of You"
+                },
+                {
+                    "answer": "NO, OP, PQ, QR",
+                    "clues": [
+                        "Refusal",
+                        "First\ncontributor to\na thread",
+                        "Canadian\nprovincial\nparty",
+                        "(e.g.)\nScannable\npixel code"
+                    ],
+                    "notes": ""
+                }
+            ],
+            "walls": [
+                {
+                    "url": "https://puzzgrid.com/grid/68578",
+                    "groups": [
+                        {
+                            "answer": "Island demonyms",
+                            "clues": [
+                                "Kiwi",
+                                "Lesbian",
+                                "Manx",
+                                "Malagasy"
+                            ]
+                        },
+                        {
+                            "answer": "Failures",
+                            "clues": [
+                                "Lemon",
+                                "Fiasco",
+                                "Dud",
+                                "Flop"
+                            ]
+                        },
+                        {
+                            "answer": "Tropical fruits",
+                            "clues": [
+                                "Lychee",
+                                "Durian",
+                                "Tamarind",
+                                "Rambutan"
+                            ]
+                        },
+                        {
+                            "answer": "Cultural slurs",
+                            "clues": [
+                                "Jook-sing",
+                                "Banana",
+                                "Coconut",
+                                "Twinkie"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "url": "https://puzzgrid.com/grid/68580",
+                    "groups": [
+                        {
+                            "answer": "Keys on the keyboard",
+                            "clues": [
+                                "Tab",
+                                "Enter",
+                                "Del",
+                                "End"
+                            ]
+                        },
+                        {
+                            "answer": "___ run",
+                            "clues": [
+                                "Home",
+                                "Dry",
+                                "Bank",
+                                "Chicken"
+                            ]
+                        },
+                        {
+                            "answer": "Need for Speed franchise",
+                            "clues": [
+                                "Shift",
+                                "Carbon",
+                                "Nitro",
+                                "No Limits"
+                            ]
+                        },
+                        {
+                            "answer": "Janet Jackson albums",
+                            "clues": [
+                                "Control",
+                                "Discipline",
+                                "20 Y.O.",
+                                "Dream Street"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "missing_vowels": [
+                {
+                    "category": "Prime numbers",
+                    "clues": [
+                        {
+                            "clue": "FR TYSV N",
+                            "answer": "Forty-seven"
+                        },
+                        {
+                            "clue": "NM BRFD LMT NS",
+                            "answer": "Number of Dalmatians (101)"
+                        },
+                        {
+                            "clue": "NM BRFN TDN TN SMMB RSTTS",
+                            "answer": "Number of United Nations member states (193)"
+                        },
+                        {
+                            "clue": "YRP THF NDRLN DDNMR S",
+                            "answer": "Year Pathfinder landed on Mars (1997)"
+                        }
+                    ]
+                },
+                {
+                    "category": "Dishes but with countries instead of cities",
+                    "clues": [
+                        {
+                            "clue": "B FNWZ LN D",
+                            "answer": "Beef New Zealand"
+                        },
+                        {
+                            "clue": "PRB NS",
+                            "answer": "Peru Beans"
+                        },
+                        {
+                            "clue": "STRS SG",
+                            "answer": "Austria Sausage"
+                        },
+                        {
+                            "clue": "CHK NKRN",
+                            "answer": "Chicken Ukraine"
+                        }
+                    ]
+                },
+                {
+                    "category": "Olympic sports in 1900",
+                    "clues": [
+                        {
+                            "clue": "SRFL FSVN G",
+                            "answer": "Surf Lifesaving"
+                        },
+                        {
+                            "clue": "BLL NNG",
+                            "answer": "Ballooning"
+                        },
+                        {
+                            "clue": "LVP GNS HTNG",
+                            "answer": "Live Pigeon Shooting"
+                        },
+                        {
+                            "clue": "TGFW R",
+                            "answer": "Tug of War"
                         }
                     ]
                 },
