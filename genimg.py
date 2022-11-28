@@ -159,7 +159,7 @@ def gen_img(q, stage, filename=None):
 #   ╓──┐ ╓──╖ ╥┐ ╥ ╥┐ ╥ ╥──┐ ╓──┐┌─╥─┐╥ ╥┐ ╥ ╓──┐    ╥  ╥ ╓──╖ ╥   ╥   ╓──┐
 #   ║    ║  ║ ║└┐║ ║└┐║ ╟─┤  ║     ║  ║ ║└┐║ ║ ─╖    ║┌┐║ ╟──╢ ║   ║   ╙──╖
 #   ╙──┘ ╙──╜ ╨ └╨ ╨ └╨ ╨──┘ ╙──┘  ╨  ╨ ╨ └╨ ╙──╜    ╙┘└╜ ╨  ╨ ╨──┘╨──┘└──╜
-def gen_wall(clues, num_done, selections, filename=None):
+def gen_wall(clues, num_done, selections, answers=None, filename=None):
 
 	pad = 12	# padding between buttons
 	w = 360	# width of a button
@@ -170,9 +170,17 @@ def gen_wall(clues, num_done, selections, filename=None):
 	tw = 4*w + 5*pad	# total width of the output bitmap
 	th = 4*h + 5*pad	# total height of the output bitmap
 
+	aw = 1476	# width of the answer bar (= 4*w + 3*pad)
+	ah = 89	# height of the answer bar
+	amw = tw - 2*pad - 12	# maximum width of the text on the answer bar
+	amh = ah - 6	# maximum height of the text on the answer bar
+
+	if answers is not None:
+		th = 4*h + 4*ah + 9*pad
+
 	def gen_button(i, clue):
 		x = (w + pad) * (i % 4) + pad
-		y = (h + pad) * (i // 4) + pad
+		y = ((h + pad) if answers is None else (h + ah + 2*pad)) * (i // 4) + pad
 
 		btn = blank_button
 		sel = False
@@ -201,10 +209,21 @@ def gen_wall(clues, num_done, selections, filename=None):
 	for i in range(16):
 		gen_button(i, clues[i])
 
+	if answers is not None:
+		for i, answer in enumerate(answers):
+			y = i*(h + ah + 2*pad) + h + 2*pad
+			res.paste(answer_bar, (pad, y), answer_bar)
+			(font, fh) = find_font_size([answer], amw, amh)
+			l = font.getlength(answer)
+			draw.text((pad + aw//2 - l//2, y + ah//2 - fh//2 + fo), answer, font=font, fill=(255, 255, 255))
+
 	image_file = open(filename, "wb") if filename is not None else io.BytesIO()
 	res.save(image_file, 'PNG')
 	image_file.seek(0)
 	return image_file
+
+def gen_wall_full(wall):
+	return gen_wall([clue for group in wall['groups'] for clue in group['clues']], 4, [], [group['answer'] for group in wall['groups']])
 
 
 #   ╥┐┌╥ ╥ ╓──┐ ╓──┐ ╥ ╥┐ ╥ ╓──┐    ╥  ╥ ╓──╖ ╥  ╥ ╥──┐ ╥   ╓──┐

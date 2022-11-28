@@ -47,7 +47,303 @@
         {
             "connections": [
                 {
-                    "answer": "Fictional newspapers with Daily",
+                    "answer": "Left-handed emoticons",
+                    "clues": [
+                        "C: Happiness",
+                        "D: Sadness",
+                        "O: Surprise",
+                        "I: Emotionlessness"
+                    ],
+                    "notes": ""
+                },
+                {
+                    "answer": "Teletubbies",
+                    "clues": [
+                        "fullimage:ConK1.png",
+                        "fullimage:ConK2.png",
+                        "fullimage:ConK3.png",
+                        "fullimage:ConK4.png"
+                    ],
+                    "notes": "Green Line: Dipsy\nYellow Loop: Laa-Laa\nRed Ring: Po\nPurple Triangle: Tinky Winky"
+                },
+                {
+                    "answer": "Flag semaphore",
+                    "clues": [
+                        "image:ConH1.png",
+                        "image:ConH2.png",
+                        "image:ConH3.png",
+                        "image:ConH4.png"
+                    ],
+                    "notes": "F\nV\nD\nR"
+                },
+                {
+                    "answer": "Geography with missing Ar-",
+                    "clues": [
+                        "Uba",
+                        "Kansas",
+                        "Menia",
+                        "Gentina"
+                    ],
+                    "notes": ""
+                },
+                {
+                    "answer": "Tom Scott game shows",
+                    "clues": [
+                        "Questionable",
+                        "The Technical\nDifficulties",
+                        "Game On",
+                        "Lateral"
+                    ],
+                    "notes": ""
+                },
+                {
+                    "answer": "Planets with axial tilt",
+                    "clues": [
+                        "image:ConI1.png",
+                        "image:ConI2.png",
+                        "image:ConI3.png",
+                        "image:ConI4.png"
+                    ],
+                    "notes": "Mercury: 0.034°\nVenus: 177.36°\nUranus: 97.77°\nEarth: 23.44°"
+                }
+            ],
+            "sequences": [
+                {
+                    "answer": "Weight classes in boxing",
+                    "clues": [
+                        "image:SeqG1.png",
+                        "image:SeqG2.jpg",
+                        "image:SeqG3.jpg",
+                        "image:SeqG4.jpg"
+                    ],
+                    "notes": "Light\nFeather\nBantam\nFly"
+                },
+                {
+                    "answer": "NATO alphabet B, C, D, E",
+                    "clues": [
+                        "image:SeqL1.jpg",
+                        "image:SeqL2.jpg",
+                        "image:SeqL3.jpg",
+                        "image:SeqL4.png"
+                    ],
+                    "notes": "Bravo, Charlie, Delta, Echo"
+                },
+                {
+                    "answer": "Count letters",
+                    "clues": [
+                        "fullimage:SeqW1.png",
+                        "fullimage:SeqW2.png",
+                        "fullimage:SeqW3.png",
+                        "fullimage:SeqW4.png"
+                    ],
+                    "notes": ""
+                },
+                {
+                    "answer": "Most viewed YouTube videos",
+                    "clues": [
+                        "“GS” (P),\nNov 2012 –\nJul 2017",
+                        "“SYA” (WK),\nJul 2017 –\nAug 2017",
+                        "“D” (LF),\nAug 2017 –\nNov 2020",
+                        "“BSD” (PBSKS&S),\nNov 2020 –\npresent"
+                    ],
+                    "notes": "Gangnam Style; Psy\nSee You Again; Wiz Khalifa\nDespacito; Luis Fonsi\nBaby Shark Dance; Pinkfong Baby Shark - Kids' Songs & Stories"
+                },
+                {
+                    "answer": "Angles (acute, right, obtuse, straight)",
+                    "clues": [
+                        "á",
+                        "fullimage:SeqY2.png",
+                        "not quick or alert\nin perception\nor intellect",
+                        "(e.g.)\nheterosexual"
+                    ],
+                    "notes": ""
+                },
+                {
+                    "answer": "MITMH Writers 2018–2021",
+                    "clues": [
+                        "Life and Order\n(formerly Death\nand Mayhem)",
+                        "Setec\nAstronomy",
+                        "Left Out",
+                        "fullimage:SeqZ4.png"
+                    ],
+                    "notes": ""
+                }
+            ],
+            "walls": [
+                {
+                    "groups": [
+                        {
+                            "answer": "Shows hosted by Alex Trebek",
+                            "clues": [
+                                "Pitfall",
+                                "Battlestars",
+                                "Malcolm",
+                                "Lucky\nNumbers"
+                            ]
+                        },
+                        {
+                            "answer": "Double ____",
+                            "clues": [
+                                "Jeopardy",
+                                "Click",
+                                "Time",
+                                "Up"
+                            ]
+                        },
+                        {
+                            "answer": "Sara Bareilles songs",
+                            "clues": [
+                                "Brave",
+                                "Gravity",
+                                "Uncharted",
+                                "Orpheus"
+                            ]
+                        },
+                        {
+                            "answer": "Pixar movies",
+                            "clues": [
+                                "Onward",
+                                "Cars",
+                                "Coco",
+                                "Soul"
+                            ]
+                        }
+                    ],
+                    "url": "https://puzzgrid.com/grid/65390"
+                },
+                {
+                    "groups": [
+                        {
+                            "answer": "Upper ___",
+                            "clues": [
+                                "Cut",
+                                "Volta",
+                                "Class",
+                                "Case"
+                            ]
+                        },
+                        {
+                            "answer": "C keywords",
+                            "clues": [
+                                "While",
+                                "Break",
+                                "Double",
+                                "Switch"
+                            ]
+                        },
+                        {
+                            "answer": "Conjunctions with extra letter",
+                            "clues": [
+                                "Hand",
+                                "Nyet",
+                                "Abut",
+                                "Gas"
+                            ]
+                        },
+                        {
+                            "answer": "Festive events",
+                            "clues": [
+                                "Do",
+                                "Bash",
+                                "Function",
+                                "Event"
+                            ]
+                        }
+                    ],
+                    "url": "https://puzzgrid.com/grid/65391"
+                }
+            ],
+            "missing_vowels": [
+                {
+                    "category": "Episodes from “The Big Bang Theory”",
+                    "clues": [
+                        {
+                            "clue": "THB GBRNHY PTHSS",
+                            "answer": "The Big Bran Hypothesis"
+                        },
+                        {
+                            "clue": "THPNC KBTT RNMLY",
+                            "answer": "The Pancake Batter Anomaly"
+                        },
+                        {
+                            "clue": "THBR BR NSBL MTN",
+                            "answer": "The Barbarian Sublimation"
+                        },
+                        {
+                            "clue": "THD HSVDC KDFC NCY",
+                            "answer": "The Adhesive Duck Deficiency"
+                        }
+                    ]
+                },
+                {
+                    "category": "Laundry symbols and their meanings",
+                    "clues": [
+                        {
+                            "clue": "CR CLNDD RYC LNNLY",
+                            "answer": "Circle and dry clean only"
+                        },
+                        {
+                            "clue": "SQ RNDN TRLD RY",
+                            "answer": "Square and natural dry"
+                        },
+                        {
+                            "clue": "TRN GLN DBLC HNGL LWD",
+                            "answer": "Triangle and bleaching allowed"
+                        },
+                        {
+                            "clue": "RNN DRN NGLLW D",
+                            "answer": "Iron and ironing allowed"
+                        }
+                    ]
+                },
+                {
+                    "category": "What the animal kingdom is up to",
+                    "clues": [
+                        {
+                            "clue": "THS TRC HSRD WN TRTH",
+                            "answer": "The ostriches are down to earth"
+                        },
+                        {
+                            "clue": "THGRF F SRST CKN GTH RNCK ST",
+                            "answer": "The giraffes are sticking their necks out"
+                        },
+                        {
+                            "clue": "THR HNSRFL NGHR NY",
+                            "answer": "The rhinos are feeling horny"
+                        },
+                        {
+                            "clue": "THLP RD SRNB TFSP T",
+                            "answer": "The leopards are in a bit of a spot"
+                        }
+                    ]
+                },
+                {
+                    "category": "Politicians and their parties",
+                    "clues": [
+                        {
+                            "clue": "JB DNNDD MCR TCPR TY",
+                            "answer": "Joe Biden and Democratic Party"
+                        },
+                        {
+                            "clue": "XJ NPN GNDC HNSC MMN STP RTY",
+                            "answer": "Xi Jinping and Chinese Communist Party"
+                        },
+                        {
+                            "clue": "M MNLM CR NNDR NS SNC",
+                            "answer": "Emmanuel Macron and Renaissance"
+                        },
+                        {
+                            "clue": "VLD YMY RZLNS KYYN DSRV NTFT HPPL",
+                            "answer": "Volodymyr Zelenskyy and Servant of the People"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "connections": [
+                {
+                    "answer": "Daily ___ fictional newspapers",
                     "clues": [
                         "Danville",
                         "Planet",
@@ -139,14 +435,14 @@
                     "notes": ""
                 },
                 {
-                    "answer": "Bingo, Bing, Bin, Bi",
+                    "answer": "MANY, shaved from both sides",
                     "clues": [
-                        "Game with\na 5×5 grid",
-                        "Search engine",
-                        "Garbage can",
-                        "(e.g.)\nSexual orientation;\nelement 83; etc."
+                        "fullimage:SeqJ1.png",
+                        "fullimage:SeqJ2.png",
+                        "fullimage:SeqJ3.png",
+                        "fullimage:SeqJ4.png"
                     ],
-                    "notes": ""
+                    "notes": "A lot of; A lot of (MANY MANY)\nWhichever; Male (ANY MAN)\nNew York; Massachusetts (NY MA)\n(e.g.) Yankee; Mike (Y M)"
                 },
                 {
                     "answer": "Indirectly clued 7-segment display",
@@ -159,12 +455,12 @@
                     "notes": "(top) 0 0 1; (left) 0 1 0 1 0\n(top) 1 3 1; (left) 1 1 1 1 1\n(top) 0 3 2; (left) 1 1 1 1 1\n(top) 1 1 2; (left) 0 2 1 1 0"
                 },
                 {
-                    "answer": "Bands with numbers missing",
+                    "answer": "Morse code H, G, F, E",
                     "clues": [
-                        "Maroon",
-                        "The Seasons",
-                        "Doors Down",
-                        "(e.g.) U"
+                        "fullimage:SeqM1.png",
+                        "fullimage:SeqM2.png",
+                        "fullimage:SeqM3.png",
+                        "fullimage:SeqM4.png"
                     ],
                     "notes": ""
                 }
@@ -353,12 +649,12 @@
                     "notes": ""
                 },
                 {
-                    "answer": "US State Capitals",
+                    "answer": "US state capitals",
                     "clues": [
                         "image:ConD1.jpg",
                         "image:ConD2.jpg",
                         "image:ConD3.jpg",
-                        "image:ConD4.jpg"
+                        "image:ConD4.png"
                     ],
                     "notes": "JACKSON Belleville (Gilmore Girls)\nMONTGOMERY Scott (Star Trek)\nAUSTIN Powers (Austin Powers)\nPHOENIX Wright (Ace Attorney)"
                 },
@@ -387,7 +683,7 @@
                     "clues": [
                         "The Thin Man",
                         "Navajas",
-                        "Jason Voorhees",
+                        "Jason\nVoorhees",
                         "Gromit"
                     ],
                     "notes": "The Thin Man = Charlie’s Angels\nNavajas = Desperado\nJason Voorhees = Friday the 13th\nGromit = Wallace & Gromit"
@@ -435,14 +731,14 @@
                     "notes": "Harry Truman, Doris Day\nRed China, Johnnie Ray\nSouth Pacific, Walter Winchell\nJoe DiMaggio"
                 },
                 {
-                    "answer": "MANY, shaved from both sides",
+                    "answer": "Bingo, Bing, Bin, Bi",
                     "clues": [
-                        "fullimage:SeqJ1.png",
-                        "fullimage:SeqJ2.png",
-                        "fullimage:SeqJ3.png",
-                        "fullimage:SeqJ4.png"
+                        "Game with\na 5×5 grid",
+                        "Search engine",
+                        "Garbage can",
+                        "(e.g.)\nElement 83"
                     ],
-                    "notes": "A lot of; A lot of (MANY MANY)\nWhichever; Male (ANY MAN)\nNew York; Massachusetts (NY MA)\n(e.g.) Yankee; Mike (Y M)"
+                    "notes": ""
                 },
                 {
                     "answer": "Prime-positioned letters in prime-positioned Harry Potter titles",
@@ -679,12 +975,12 @@
                     "notes": ""
                 },
                 {
-                    "answer": "Fake middle initials",
+                    "answer": "Doc Brown (Back to the Future)",
                     "clues": [
-                        "David O.\nSelznick",
-                        "Michael J.\nFox",
-                        "Ulysses S.\nGrant",
-                        "J. K.\nRowling"
+                        "Einstein",
+                        "Great Scott",
+                        "1.21 GW",
+                        "88 mph"
                     ],
                     "notes": ""
                 },
@@ -935,302 +1231,6 @@
         {
             "connections": [
                 {
-                    "answer": "Left-handed emoticons",
-                    "clues": [
-                        "C: Happiness",
-                        "D: Sadness",
-                        "O: Surprise",
-                        "I: Emotionlessness"
-                    ],
-                    "notes": ""
-                },
-                {
-                    "answer": "Teletubbies",
-                    "clues": [
-                        "fullimage:ConK1.png",
-                        "fullimage:ConK2.png",
-                        "fullimage:ConK3.png",
-                        "fullimage:ConK4.png"
-                    ],
-                    "notes": "Green Line: Dipsy\nYellow Loop: Laa-Laa\nRed Ring: Po\nPurple Triangle: Tinky Winky"
-                },
-                {
-                    "answer": "Flag semaphore",
-                    "clues": [
-                        "image:ConH1.png",
-                        "image:ConH2.png",
-                        "image:ConH3.png",
-                        "image:ConH4.png"
-                    ],
-                    "notes": "F\nV\nD\nR"
-                },
-                {
-                    "answer": "Geography with missing Ar-",
-                    "clues": [
-                        "Uba",
-                        "Kansas",
-                        "Menia",
-                        "Gentina"
-                    ],
-                    "notes": ""
-                },
-                {
-                    "answer": "Tom Scott game shows",
-                    "clues": [
-                        "Questionable",
-                        "The Technical\nDifficulties",
-                        "Game On",
-                        "Lateral"
-                    ],
-                    "notes": ""
-                },
-                {
-                    "answer": "Planets with axial tilt",
-                    "clues": [
-                        "image:ConI1.png",
-                        "image:ConI2.png",
-                        "image:ConI3.png",
-                        "image:ConI4.png"
-                    ],
-                    "notes": "Mercury: 0.034°\nVenus: 177.36°\nUranus: 97.77°\nEarth: 23.44°"
-                }
-            ],
-            "sequences": [
-                {
-                    "answer": "Weight classes in boxing",
-                    "clues": [
-                        "image:SeqG1.png",
-                        "image:SeqG2.jpg",
-                        "image:SeqG3.jpg",
-                        "image:SeqG4.jpg"
-                    ],
-                    "notes": "Light\nFeather\nBantam\nFly"
-                },
-                {
-                    "answer": "NATO alphabet B, C, D, E",
-                    "clues": [
-                        "image:SeqL1.jpg",
-                        "image:SeqL2.jpg",
-                        "image:SeqL3.jpg",
-                        "image:SeqL4.png"
-                    ],
-                    "notes": "Bravo, Charlie, Delta, Echo"
-                },
-                {
-                    "answer": "Movies with ever-fewer M’s",
-                    "clues": [
-                        "image:SeqH1.jpg",
-                        "image:SeqH2.jpg",
-                        "image:SeqH3.jpg",
-                        "image:SeqH4.jpg"
-                    ],
-                    "notes": "Mamma Mia!\nThe Mummy\nMemento\nMulan"
-                },
-                {
-                    "answer": "Most viewed YouTube videos",
-                    "clues": [
-                        "“GS” (P),\nNov 2012 –\nJul 2017",
-                        "“SYA” (WK),\nJul 2017 –\nAug 2017",
-                        "“D” (LF),\nAug 2017 –\nNov 2020",
-                        "“BSD” (PBSKS&S),\nNov 2020 –\npresent"
-                    ],
-                    "notes": "Gangnam Style; Psy\nSee You Again; Wiz Khalifa\nDespacito; Luis Fonsi\nBaby Shark Dance; Pinkfong Baby Shark - Kids' Songs & Stories"
-                },
-                {
-                    "answer": "Angles (acute, right, obtuse, straight)",
-                    "clues": [
-                        "á",
-                        "fullimage:SeqY2.png",
-                        "not quick or alert\nin perception\nor intellect",
-                        "(e.g.)\nheterosexual"
-                    ],
-                    "notes": ""
-                },
-                {
-                    "answer": "MITMH Writers 2018–2021",
-                    "clues": [
-                        "Life and Order\n(formerly Death\nand Mayhem)",
-                        "Setec\nAstronomy",
-                        "Left Out",
-                        "fullimage:SeqZ4.png"
-                    ],
-                    "notes": ""
-                }
-            ],
-            "walls": [
-                {
-                    "groups": [
-                        {
-                            "answer": "Shows hosted by Alex Trebek",
-                            "clues": [
-                                "Pitfall",
-                                "Battlestars",
-                                "Malcolm",
-                                "Lucky\nNumbers"
-                            ]
-                        },
-                        {
-                            "answer": "Double ____",
-                            "clues": [
-                                "Jeopardy",
-                                "Click",
-                                "Time",
-                                "Up"
-                            ]
-                        },
-                        {
-                            "answer": "Sara Bareilles songs",
-                            "clues": [
-                                "Brave",
-                                "Gravity",
-                                "Uncharted",
-                                "Orpheus"
-                            ]
-                        },
-                        {
-                            "answer": "Pixar movies",
-                            "clues": [
-                                "Onward",
-                                "Cars",
-                                "Coco",
-                                "Soul"
-                            ]
-                        }
-                    ],
-                    "url": "https://puzzgrid.com/grid/65390"
-                },
-                {
-                    "groups": [
-                        {
-                            "answer": "Upper ___",
-                            "clues": [
-                                "Cut",
-                                "Volta",
-                                "Class",
-                                "Case"
-                            ]
-                        },
-                        {
-                            "answer": "C keywords",
-                            "clues": [
-                                "While",
-                                "Break",
-                                "Double",
-                                "Switch"
-                            ]
-                        },
-                        {
-                            "answer": "Conjunctions with extra letter",
-                            "clues": [
-                                "Hand",
-                                "Nyet",
-                                "Abut",
-                                "Gas"
-                            ]
-                        },
-                        {
-                            "answer": "Festive events",
-                            "clues": [
-                                "Do",
-                                "Bash",
-                                "Function",
-                                "Event"
-                            ]
-                        }
-                    ],
-                    "url": "https://puzzgrid.com/grid/65391"
-                }
-            ],
-            "missing_vowels": [
-                {
-                    "category": "Episodes from “The Big Bang Theory”",
-                    "clues": [
-                        {
-                            "clue": "THB GBRNHY PTHSS",
-                            "answer": "The Big Bran Hypothesis"
-                        },
-                        {
-                            "clue": "THPNC KBTT RNMLY",
-                            "answer": "The Pancake Batter Anomaly"
-                        },
-                        {
-                            "clue": "THBR BR NSBL MTN",
-                            "answer": "The Barbarian Sublimation"
-                        },
-                        {
-                            "clue": "THD HSVDC KDFC NCY",
-                            "answer": "The Adhesive Duck Deficiency"
-                        }
-                    ]
-                },
-                {
-                    "category": "Laundry symbols and their meanings",
-                    "clues": [
-                        {
-                            "clue": "CR CLNDD RYC LNNLY",
-                            "answer": "Circle and dry clean only"
-                        },
-                        {
-                            "clue": "SQ RNDN TRLD RY",
-                            "answer": "Square and natural dry"
-                        },
-                        {
-                            "clue": "TRN GLN DBLC HNGL LWD",
-                            "answer": "Triangle and bleaching allowed"
-                        },
-                        {
-                            "clue": "RNN DRN NGLLW D",
-                            "answer": "Iron and ironing allowed"
-                        }
-                    ]
-                },
-                {
-                    "category": "What the animal kingdom is up to",
-                    "clues": [
-                        {
-                            "clue": "THS TRC HSRD WN TRTH",
-                            "answer": "The ostriches are down to earth"
-                        },
-                        {
-                            "clue": "THGRF F SRST CKN GTH RNCK ST",
-                            "answer": "The giraffes are sticking their necks out"
-                        },
-                        {
-                            "clue": "THR HNSRFL NGHR NY",
-                            "answer": "The rhinos are feeling horny"
-                        },
-                        {
-                            "clue": "THLP RD SRNB TFSP T",
-                            "answer": "The leopards are in a bit of a spot"
-                        }
-                    ]
-                },
-                {
-                    "category": "Politicians and their parties",
-                    "clues": [
-                        {
-                            "clue": "JB DNNDD MCR TCPR TY",
-                            "answer": "Joe Biden and Democratic Party"
-                        },
-                        {
-                            "clue": "XJ NPN GNDC HNSC MMN STP RTY",
-                            "answer": "Xi Jinping and Chinese Communist Party"
-                        },
-                        {
-                            "clue": "M MNLM CR NNDR NS SNC",
-                            "answer": "Emmanuel Macron and Renaissance"
-                        },
-                        {
-                            "clue": "VLD YMY RZLNS KYYN DSRV NTFT HPPL",
-                            "answer": "Volodymyr Zelenskyy and Servant of the People"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "connections": [
-                {
                     "answer": "Planets and their largest moon",
                     "clues": [
                         "Sea has\nthe sea",
@@ -1315,22 +1315,22 @@
                 {
                     "answer": "Rainbow movie actors",
                     "clues": [
-                        "Rosalie\nChiang",
-                        "Malcolm\nMcDowell",
-                        "Geoffrey\nHughes",
-                        "(e.g.) Ryan\nReynolds"
+                        "Meilin Lee\nRosalie Chiang",
+                        "Alex DeLarge\nMalcolm McDowell",
+                        "Paul McCartney\nGeoffrey Hughes",
+                        "(e.g.)\nHal Jordan\nRyan Reynolds"
                     ],
                     "notes": "Meilin Lee - Turning Red\nAlex DeLarge - A Clockwork Orange\nPaul McCartney - Yellow Submarine\nHal Jordan - Green Lantern"
                 },
                 {
-                    "answer": "Count letters",
+                    "answer": "Movies with ever-fewer M’s",
                     "clues": [
-                        "fullimage:SeqW1.png",
-                        "fullimage:SeqW2.png",
-                        "fullimage:SeqW3.png",
-                        "fullimage:SeqW4.png"
+                        "image:SeqH1.jpg",
+                        "image:SeqH2.jpg",
+                        "image:SeqH3.jpg",
+                        "image:SeqH4.jpg"
                     ],
-                    "notes": ""
+                    "notes": "Mamma Mia!\nThe Mummy\nMemento\nMulan"
                 },
                 {
                     "answer": "Braille",
@@ -1539,10 +1539,10 @@
                 {
                     "answer": "Landmarks in Olympic fonts",
                     "clues": [
-                        "image:ConL1.png",
-                        "image:ConL2.png",
-                        "image:ConL3.png",
-                        "image:ConL4.png"
+                        "fullimage:ConL1.png",
+                        "fullimage:ConL2.png",
+                        "fullimage:ConL3.png",
+                        "fullimage:ConL4.png"
                     ],
                     "notes": "Japan 2020, Paris 2024, Rio 2016, London 2012"
                 },
@@ -1557,12 +1557,12 @@
                     "notes": "Dinosaurs, Watermelons, Smurfs, Gold Bears"
                 },
                 {
-                    "answer": "Mario Kart items",
+                    "answer": "Fake middle initials",
                     "clues": [
-                        "Mushroom",
-                        "Lightning",
-                        "Bullet Bill",
-                        "Blue Shell"
+                        "David O.\nSelznick",
+                        "Michael J.\nFox",
+                        "Ulysses S.\nGrant",
+                        "J. K.\nRowling"
                     ],
                     "notes": ""
                 },
@@ -1599,14 +1599,14 @@
                     "notes": "XIII: Orsini\nXIV: Lambertini\nXV: della Chiesa\nXVI: Ratzinger"
                 },
                 {
-                    "answer": "Successive US presidents’ children",
+                    "answer": "Bands with numbers missing (5, 4, 3, 2)",
                     "clues": [
-                        "Barbara &\nJenna",
-                        "Malia &\nSasha",
-                        "Tiffany,\nBarron, etc.",
-                        "Hunter,\nBeau, etc."
+                        "Maroon",
+                        "The Seasons",
+                        "Doors Down",
+                        "(e.g.) U"
                     ],
-                    "notes": "Children of: George W. Bush, Barack Obama, Donald Trump, Joe Biden"
+                    "notes": ""
                 },
                 {
                     "answer": "Final Fantasy 4, 5, 6, 7",
@@ -1629,14 +1629,14 @@
                     "notes": "One, two, buckle my shoe\nThree, four, knock at the door\nFive, six, pick up sticks\nSeven, eight, lay them straight"
                 },
                 {
-                    "answer": "Billboard Year-End Hot 100 top singles, 2020–17",
+                    "answer": "Billboard Year-End Hot 100 top singles, 2018–21",
                     "clues": [
-                        "I can’t sleep\nuntil I feel\nyour touch",
-                        "I’m gonna ride\n’til I can’t\nno more",
-                        "She say, do you\nlove me? I tell\nher, only partly",
-                        "(e.g.) We push\nand pull like\na magnet do"
+                        "God’s Plan",
+                        "Old Town Road",
+                        "Blinding Lights",
+                        "Levitating"
                     ],
-                    "notes": "The Weeknd — Blinding Lights\nLil Nas X — Old Town Road\nDrake — God’s Plan\nEd Sheeran — Shape of You"
+                    "notes": "Drake — God’s Plan\nLil Nas X — Old Town Road\nThe Weeknd — Blinding Lights\nDua Lipa — Levitating"
                 },
                 {
                     "answer": "NO, OP, PQ, QR",

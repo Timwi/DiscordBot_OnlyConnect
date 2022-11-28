@@ -12,7 +12,7 @@ import config
 from discord.ext import commands
 from discord import app_commands
 from PIL import Image, ImageOps, ImageDraw, ImageFont
-from genimg import gen_img, gen_wall, gen_missing_vowels, gen_score, gen_scores
+from genimg import gen_img, gen_wall, gen_wall_full, gen_missing_vowels, gen_score, gen_scores
 from utils import indexof
 
 f = io.open("data/data.json", mode="r", encoding="utf-8")
@@ -372,8 +372,11 @@ async def play(interaction: discord.Interaction):
 
 		# Connections/Sequences game starts here
 		q = game['batches'][game['ongoing']['batch']]['sequences' if isSeq else 'connections'][selection]
+		print(f"───────────────────────────────────────────────────\n{q['answer']}\n\n")
+		for clue in q['clues']:
+			print(clue)
 		if q['notes'] is not None and len(q['notes']) > 0:
-			print(f"───────────────────────────────────────────────────\n{q['notes']}\n\n")
+			print(f"\n{q['notes']}\n")
 
 		for other_player in other_players:
 			try:
@@ -445,7 +448,7 @@ async def play(interaction: discord.Interaction):
 			@discord.ui.button(label='✗')
 			async def on_wrong(self, interaction: discord.Interaction, button: discord.ui.Button):
 				# Wrong answer ⇒ reveal all answers (no points awarded)
-				if interaction.user.id in config.admins:
+				if self.other and interaction.user.id in config.admins:
 					self.stage = 6
 					await self.generate(interaction.response, descr='')
 					done_event.set()
@@ -518,7 +521,7 @@ async def play(interaction: discord.Interaction):
 		msg = await interaction.response.send_message(f'{mentions}\n**{team["name"]}**, select an Egyptian hieroglyph.', view=vw)
 		btn_click: discord.Interaction = await client.wait_for('interaction', check=lambda e: e.data.get('custom_id') in btn_ids and e.user.id in team['players'], timeout=None)
 		selection = btn_ids.index(btn_click.data['custom_id'])
-		await btn_click.response.edit_message(f'**{team["name"]}** selected **{wall_hieroglyphs[selection]}**!', view=None)
+		await btn_click.response.edit_message(content=f'**{team["name"]}** selected **{wall_hieroglyphs[selection]}**!', view=None)
 
 		# Output the wall to the console
 		wall = game['batches'][game['ongoing']['batch']]['walls'][selection]
@@ -550,7 +553,11 @@ async def play(interaction: discord.Interaction):
 		btn_click = await client.wait_for('interaction', check=lambda e: e.data.get('custom_id') in btn_ids and e.user.id in config.admins, timeout=None)
 		num_points = points[btn_ids.index(btn_click.data['custom_id'])]
 		game['ongoing']['scores'][game['ongoing']['up']] += num_points
-		await btn_click.response.edit_message(content=f'**{team["name"]}** earned **__{num_points} points__!**', view=None)
+
+		file = discord.File(gen_wall_full(wall), filename='wall.png')
+		embed = discord.Embed(title='Round 3: Connecting Wall', colour=0x5865f2)
+		embed.set_image(url='attachment://wall.png')
+		await btn_click.response.edit_message(content=f'**{team["name"]}** earned **__{num_points} points__!**', embed=embed, attachments=[file], view=None)
 
 		# advance to the next wall or round
 		game['ongoing']['up'] = game['ongoing']['up'] ^ 1
