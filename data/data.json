@@ -15,7 +15,7 @@
             "score": 0
         }
     ],
-    "ongoing": None,
+    "ongoing": null,
     "batches_used": [],
     "tie_breakers_used": [
         0,
@@ -455,7 +455,7 @@
                     "notes": "(top) 0 0 1; (left) 0 1 0 1 0\n(top) 1 3 1; (left) 1 1 1 1 1\n(top) 0 3 2; (left) 1 1 1 1 1\n(top) 1 1 2; (left) 0 2 1 1 0"
                 },
                 {
-                    "answer": "Morse code H, G, F, E",
+                    "answer": "Morse code A, E, I, O",
                     "clues": [
                         "fullimage:SeqM1.png",
                         "fullimage:SeqM2.png",
