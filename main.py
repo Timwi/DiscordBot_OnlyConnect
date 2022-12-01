@@ -102,7 +102,7 @@ async def addteam(	interaction: discord.Interaction,
 		players.append(player_2.id)
 	if player_3.id not in players:
 		players.append(player_3.id)
-	game['teams'].append({"name": name, "players": [player_1.id, player_2.id, player_3.id], "score": 0})
+	game['teams'].append({"name": name, "players": players, "score": 0})
 	save_game()
 	await interaction.response.send_message('A new team joined! Team name: **{}**, members: {}'.format(name, ", ".join(f'<@{p}>' for p in players)))
 
@@ -301,6 +301,7 @@ async def play(interaction: discord.Interaction):
 				check=lambda e: e.data.get('custom_id') == buzzer_id and e.user.id in config.admins, timeout=None)
 
 			# Display clue
+			print(f"{q['clue']} ==> {q['answer']}")
 			qs.append(q['clue'])
 			file = discord.File(gen_missing_vowels(round['category'], qs), filename='mv.png')
 			await btn_click.response.edit_message(embed=embed, attachments=[file], view=vw)
@@ -408,9 +409,9 @@ async def play(interaction: discord.Interaction):
 				# During timer: players buzzed
 				if not self.buzzed and interaction.user in self.target_users:
 					self.buzzed = True
+					buzz_event.set()
 					embed.description=f'🔔 BUZZED: {team["name"]}'
 					await interaction.response.edit_message(embed=embed)
-					buzz_event.set()
 
 				# After timer: admin presses buzzer ⇒ reveal all answers and award points
 				elif self.buzzed and interaction.user.id in config.admins:
@@ -478,8 +479,9 @@ async def play(interaction: discord.Interaction):
 			try:
 				await asyncio.wait_for(buzz_event.wait(), timeout=t_delay)
 			except asyncio.exceptions.TimeoutError:
-				embed.description = f'{["🕛", "🕚", "🕙", "🕘", "🕗", "🕖", "🕕", "🕔", "🕓", "🕒", "🕑", "🕐"][(remaining_time//5) % 12]} {remaining_time} seconds remaining' if remaining_time > 0 else f'❌ Time’s up!'
-				await msg.edit(embed=embed)
+				if not listener.buzzed:
+					embed.description = f'{["🕛", "🕚", "🕙", "🕘", "🕗", "🕖", "🕕", "🕔", "🕓", "🕒", "🕑", "🕐"][(remaining_time//5) % 12]} {remaining_time} seconds remaining' if remaining_time > 0 else f'❌ Time’s up!'
+					await msg.edit(embed=embed)
 
 		for other_player in other_players:
 			try:
@@ -521,7 +523,7 @@ async def play(interaction: discord.Interaction):
 		msg = await interaction.response.send_message(f'{mentions}\n**{team["name"]}**, select an Egyptian hieroglyph.', view=vw)
 		btn_click: discord.Interaction = await client.wait_for('interaction', check=lambda e: e.data.get('custom_id') in btn_ids and e.user.id in team['players'], timeout=None)
 		selection = btn_ids.index(btn_click.data['custom_id'])
-		await btn_click.response.edit_message(content=f'**{team["name"]}** selected **{wall_hieroglyphs[selection]}**!', view=None)
+		await btn_click.response.edit_message(content=f'**{team["name"]}** selected **{wall_hieroglyphs[selection]}!**', view=None)
 
 		# Output the wall to the console
 		wall = game['batches'][game['ongoing']['batch']]['walls'][selection]
