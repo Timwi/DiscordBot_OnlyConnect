@@ -10,17 +10,28 @@
         {
             "name": "TRYOUT TEAM",
             "players": [
-                434049444829462539
+                175298987086053376
+            ],
+            "score": 0
+        },
+        {
+            "name": "ANOTHER TEAM",
+            "players": [
+                175298987086053376
+            ],
+            "score": 0
+        },
+        {
+            "name": "LAST TEAM",
+            "players": [
+                175298987086053376
             ],
             "score": 0
         }
     ],
     "ongoing": null,
     "batches_used": [],
-    "tie_breakers_used": [
-        0,
-        1
-    ],
+    "tie_breakers_used": [],
     "tie_breakers": [
         {
             "clue": "LST HBT TLW NTHWR",
@@ -255,23 +266,23 @@
             ],
             "missing_vowels": [
                 {
-                    "category": "Episodes from “The Big Bang Theory”",
+                    "category": "Wait",
                     "clues": [
                         {
-                            "clue": "THB GBRNHY PTHSS",
-                            "answer": "The Big Bran Hypothesis"
+                            "clue": "B DYRT M",
+                            "answer": "Bide your time"
                         },
                         {
-                            "clue": "THPNC KBTT RNMLY",
-                            "answer": "The Pancake Batter Anomaly"
+                            "clue": "J NTHQ",
+                            "answer": "Join the queue"
                         },
                         {
-                            "clue": "THBR BR NSBL MTN",
-                            "answer": "The Barbarian Sublimation"
+                            "clue": "H LDY RH RSS",
+                            "answer": "Hold your horses"
                         },
                         {
-                            "clue": "THD HSVDC KDFC NCY",
-                            "answer": "The Adhesive Duck Deficiency"
+                            "clue": "KPY RSH RTN",
+                            "answer": "Keep your shirt on"
                         }
                     ]
                 },
@@ -321,8 +332,8 @@
                     "category": "Politicians and their parties",
                     "clues": [
                         {
-                            "clue": "JB DNNDD MCR TCPR TY",
-                            "answer": "Joe Biden and Democratic Party"
+                            "clue": "JS TNT RDN DLBR LP RTYFC ND",
+                            "answer": "Justin Trudeau and Liberal Party of Canada"
                         },
                         {
                             "clue": "XJ NPN GNDC HNSC MMN STP RTY",
