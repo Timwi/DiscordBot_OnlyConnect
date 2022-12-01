@@ -10,11 +10,12 @@ blank_button	= Image.open(os.path.join('res', 'q.png'))
 question_mark_button	= Image.open(os.path.join('res', 'qq.png'))
 answer_bar	= Image.open(os.path.join('res', 'answer.png'))
 timer_bar	= Image.open(os.path.join('res', 'timer.png'))
-wall_colors	= list(map(lambda n: Image.open(os.path.join('res', f'wall_{n}.png')), [1, 2, 3, 4]))
+wall_colors	= [Image.open(os.path.join('res', f'wall_{n+1}.png')) for n in range(4)]
 mv_category_bar	= Image.open(os.path.join('res', 'mvcat.png'))
 mv_question_bar	= Image.open(os.path.join('res', 'mvq.png'))
 score_bar_1	= Image.open(os.path.join('res', 'score_1.png'))
 score_bar_2	= Image.open(os.path.join('res', 'score_2.png'))
+full_score_bars	= [Image.open(os.path.join('res', f'fullscore_{n+1}.png')) for n in range(4)]
 score_box	= Image.open(os.path.join('res', 'score.png'))
 
 def is_font_too_large(fs, texts, maxw, maxh):
@@ -336,7 +337,7 @@ def gen_scores(teams, filename=None):
 
 	order = [*sorted(range(len(teams)), key=lambda x: -teams[x]['score'])]
 	for i in range(len(teams)):
-		dodraw(score_bar_1 if i % 2 == 0 else score_bar_2, teams[order[i]]['name'], str(teams[order[i]]['score']), (pad+h) * i)
+		dodraw(full_score_bars[i % 4], teams[order[i]]['name'], str(teams[order[i]]['score']), (pad+h) * i)
 
 	image_file = open(filename, "wb") if filename is not None else io.BytesIO()
 	res.save(image_file, 'PNG')
