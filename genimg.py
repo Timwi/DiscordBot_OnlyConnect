@@ -293,8 +293,8 @@ def gen_score(teams, scores, filename=None):
 		l = font.getlength(score)
 		draw.text((2*pad + w + sw//2 - l//2, pad + 6 + fo1 + y + h//2 - fh//2), score, font=font, fill=(5, 47, 85))
 
-	dodraw(score_bar_1, teams[0], str(scores[0]), 0)
-	dodraw(score_bar_2, teams[1], str(scores[1]), pad+h)
+	dodraw(score_bar_1, teams[0].upper(), str(scores[0]), 0)
+	dodraw(score_bar_2, teams[1].upper(), str(scores[1]), pad+h)
 
 	image_file = open(filename, "wb") if filename is not None else io.BytesIO()
 	res.save(image_file, 'PNG')
@@ -337,7 +337,7 @@ def gen_scores(teams, filename=None):
 
 	order = [*sorted(range(len(teams)), key=lambda x: -teams[x]['score'])]
 	for i in range(len(teams)):
-		dodraw(full_score_bars[i % 4], teams[order[i]]['name'], str(teams[order[i]]['score']), (pad+h) * i)
+		dodraw(full_score_bars[i % 4], teams[order[i]]['name'].upper(), str(teams[order[i]]['score']), (pad+h) * i)
 
 	image_file = open(filename, "wb") if filename is not None else io.BytesIO()
 	res.save(image_file, 'PNG')

@@ -15,8 +15,8 @@ from PIL import Image, ImageOps, ImageDraw, ImageFont
 from genimg import gen_img, gen_wall, gen_wall_full, gen_missing_vowels, gen_score, gen_scores
 from utils import indexof
 
-f = io.open("data/data.json", mode="r", encoding="utf-8")
-game = json.load(f)
+with io.open("data/data.json", mode="r", encoding="utf-8") as f:
+	game = json.load(f)
 
 hieroglyphs = ["𓇌   Two Reeds", "𓃭   Lion", "𓎛   Twisted Flax", "𓆑   Horned Viper", "𓈗   Water", "𓂀   Eye of Horus"]
 wall_hieroglyphs = ["𓃭   Lion", "𓈗   Water"]
@@ -24,8 +24,8 @@ wall_hieroglyphs = ["𓃭   Lion", "𓈗   Water"]
 
 def save_game():
 	global game
-	with open("data/data.json", 'w', encoding='utf-8') as f:
-		json.dump(game, f, ensure_ascii=False, indent=4)
+	with open("data/data.json", 'w', encoding='utf-8') as df:
+		json.dump(game, df, ensure_ascii=False, indent=4)
 
 class Bot(discord.Client):
 	def __init__(self):
@@ -124,7 +124,7 @@ async def delteam(	interaction: discord.Interaction,
 	t = game['teams'][index]
 	del game['teams'][index]
 	save_game()
-	await interaction.response.send_message('Team **{}** has left the game: {}, score: {t.score}'.format(t.name, ", ".join(f'<@{p}>' for p in t.players)))
+	await interaction.response.send_message('Team **{}** has left the game: {}, score: {}'.format(t['name'], ", ".join(f'<@{p}>' for p in t['players']), t['score']))
 
 #	  / ╓──┐┌─╥─┐╓──╖ ╥──╖┌─╥─┐
 #	 /  ╙──╖  ║  ╟──╢ ╟─╥╜  ║
