@@ -1,30 +1,38 @@
 {
     "teams": [
         {
-            "name": "TEST TEAM",
+            "name": "RUN",
             "players": [
-                175298987086053376
+                440949067015782401,
+                255673061515198474,
+                272467512963104768
             ],
             "score": 0
         },
         {
-            "name": "TRYOUT TEAM",
+            "name": "minecraft",
             "players": [
-                175298987086053376
+                441958578962694144,
+                246354921761406978,
+                177438227563675648
             ],
             "score": 0
         },
         {
-            "name": "ANOTHER TEAM",
+            "name": "We Feel Sorry For You",
             "players": [
-                175298987086053376
+                127783432083210240,
+                305983034799161344,
+                186527577467256833
             ],
             "score": 0
         },
         {
-            "name": "LAST TEAM",
+            "name": "Need for Speed: Ghost Wanted",
             "players": [
-                175298987086053376
+                615242797519339531,
+                140928979849838592,
+                116539317559492610
             ],
             "score": 0
         }
@@ -42,16 +50,16 @@
             "answer": "A penny saved is a penny earned"
         },
         {
+            "clue": "THRSN SCHT HN GSF RLN CH",
+            "answer": "There is no such thing as (a) free lunch"
+        },
+        {
             "clue": "SYC MSYG",
             "answer": "Easy come, easy go"
         },
         {
             "clue": "GDB YC RLWR LD",
             "answer": "Goodbye, cruel world"
-        },
-        {
-            "clue": "THRSN SCHT HN GSF RLN CH",
-            "answer": "There is no such thing as (a) free lunch"
         }
     ],
     "batches": [
@@ -1642,10 +1650,10 @@
                 {
                     "answer": "Billboard Year-End Hot 100 top singles, 2018–21",
                     "clues": [
-                        "God’s Plan",
                         "Old Town Road",
                         "Blinding Lights",
-                        "Levitating"
+                        "Levitating",
+                        "Heat Waves"
                     ],
                     "notes": "Drake — God’s Plan\nLil Nas X — Old Town Road\nThe Weeknd — Blinding Lights\nDua Lipa — Levitating"
                 },
