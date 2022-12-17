@@ -81,7 +81,9 @@ async def show_next(interaction: discord.Interaction):
 @client.tree.command(name='flip', description='flip a coin')
 async def flip(interaction: discord.Interaction):
 	result = random.choice(['heads', 'tails'])
-	await interaction.response.send_message(result)
+	file_name = os.path.join('res', 'coins', f"{result}{random.randrange(0, 5) + 1}.png")
+	df = discord.File(open(file_name, 'rb'), filename=f"{result}.png")
+	await interaction.response.send_message(file=df)
 
 #	  / ╓──╖ ─╥─╖ ─╥─╖┌─╥─┐╥──┐ ╓──╖ ╥┐┌╥
 #	 /  ╟──╢  ║ ║  ║ ║  ║  ╟─┤  ╟──╢ ║└┘║

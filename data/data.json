@@ -1,7 +1,7 @@
 {
     "teams": [
         {
-            "name": "RUN",
+            "name": "BRUTES",
             "players": [
                 440949067015782401,
                 255673061515198474,
@@ -10,7 +10,7 @@
             "score": 0
         },
         {
-            "name": "minecraft",
+            "name": "MINECRAFTERS",
             "players": [
                 441958578962694144,
                 246354921761406978,
@@ -19,7 +19,7 @@
             "score": 0
         },
         {
-            "name": "We Feel Sorry For You",
+            "name": "SANDWICHES",
             "players": [
                 127783432083210240,
                 305983034799161344,
@@ -28,7 +28,7 @@
             "score": 0
         },
         {
-            "name": "Need for Speed: Ghost Wanted",
+            "name": "SPEED NEEDERS",
             "players": [
                 615242797519339531,
                 140928979849838592,
