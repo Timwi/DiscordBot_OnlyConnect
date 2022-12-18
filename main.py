@@ -331,7 +331,7 @@ async def play(interaction: discord.Interaction):
 
 					# throw it to the other team for a bonus
 					team_ix = team_ix ^ 1
-					embed.description = f'💎 Bonus: {game["teams"][team_ix]["name"]}'
+					embed.description = f'💎 Bonus: {game["teams"][game["ongoing"]["teams"][team_ix]]["name"]}'
 					await btn_click.response.edit_message(embed=embed)
 					btn_click = await client.wait_for('interaction',
 						check=lambda e: e.data.get('custom_id') in [correct_id, wrong_id] and e.user.id in config.admins, timeout=None)
