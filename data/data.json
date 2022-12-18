@@ -7,7 +7,7 @@
                 255673061515198474,
                 272467512963104768
             ],
-            "score": 0
+            "score": 54
         },
         {
             "name": "MINECRAFTERS",
@@ -16,7 +16,7 @@
                 246354921761406978,
                 177438227563675648
             ],
-            "score": 0
+            "score": 41
         },
         {
             "name": "SANDWICHES",
@@ -25,20 +25,27 @@
                 305983034799161344,
                 186527577467256833
             ],
-            "score": 0
+            "score": 22
         },
         {
             "name": "SPEED NEEDERS",
             "players": [
                 615242797519339531,
-                140928979849838592,
-                116539317559492610
+                116539317559492610,
+                843266568536064022
             ],
-            "score": 0
+            "score": 82
         }
     ],
     "ongoing": null,
-    "batches_used": [],
+    "batches_used": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        0
+    ],
     "tie_breakers_used": [],
     "tie_breakers": [
         {
@@ -1817,23 +1824,23 @@
                     ]
                 },
                 {
-                    "category": "Astute scientists",
+                    "category": "Episodes from “The Big Bang Theory”",
                     "clues": [
                         {
-                            "clue": "BR LLN TBL GST",
-                            "answer": "Brilliant biologist"
+                            "clue": "THB GBRNHY PTHSS",
+                            "answer": "The Big Bran Hypothesis"
                         },
                         {
-                            "clue": "CRF TYCH MST",
-                            "answer": "Crafty chemist"
+                            "clue": "THPNC KBTT RNMLY",
+                            "answer": "The Pancake Batter Anomaly"
                         },
                         {
-                            "clue": "FX YPH YSCS T",
-                            "answer": "Foxy physicist"
+                            "clue": "THBR BR NSBL MTN",
+                            "answer": "The Barbarian Sublimation"
                         },
                         {
-                            "clue": "CNNN GL NGST",
-                            "answer": "Cunning linguist"
+                            "clue": "THD HSVDC KDFC NCY",
+                            "answer": "The Adhesive Duck Deficiency"
                         }
                     ]
                 }

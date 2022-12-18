@@ -315,7 +315,7 @@ async def play(interaction: discord.Interaction):
 			if btn_click.data['custom_id'] == buzzer_id:
 
 				team_ix = 0 if btn_click.user.id in players1 else 1
-				embed.description = f'🔔 BUZZED: {game["teams"][team_ix]["name"]}'
+				embed.description = f'🔔 BUZZED: {game["teams"][game["ongoing"]["teams"][team_ix]]["name"]}'
 				await btn_click.response.edit_message(embed=embed)
 
 				# Wait for host to press ✓ or ✗
